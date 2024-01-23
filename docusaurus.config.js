@@ -149,6 +149,18 @@ const config = {
           name: 'robots',
           content: 'max-image-preview:large'
         },
+        {
+          name: 'googlebot',
+          content: 'index,follow'
+        },
+        {
+          name: 'google',
+          content: 'notranslate'
+        },
+        {
+          name: 'keywords',
+          content: 'Délita MAKANDA, Développeur Full Stack, Développeur web, Développeur front-end, frontend, HTML, CSS, JavaScript, Coldfusion, React, Vue.js, AngularJS, Angular, Ionic, Django, .NET, Azure, GitHub, Node.js, Express, Node.js, MongoDB, PostgreSQL, MySQL'
+        }
       ]
     }),
 };
