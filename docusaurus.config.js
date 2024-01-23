@@ -13,11 +13,11 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://delita-makanda.github.io',
-  baseUrl: '/',
+  url: 'https://delitamakanda.github.io',
+  baseUrl: '/portftolio',
 
   organizationName: 'delitamakanda', // Usually your GitHub org/user name.
-  projectName: 'portfolio', // Usually your repo name.
+  projectName: 'portftolio', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -137,7 +137,7 @@ const config = {
         ],
       },
       footer: {
-        style: 'dark',
+        style: 'light',
         copyright: `Copyright © ${new Date().getFullYear()} Délita MAKANDA, Inc. Built with Docusaurus.`,
       },
       prism: {

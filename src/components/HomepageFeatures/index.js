@@ -1,62 +1,60 @@
-import clsx from 'clsx';
-import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import { EXPERIENCES, EDUCATION } from '../../utils/data';
+import { Chip } from '@mui/material';
 
-const FeatureList = [
-  {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
-  },
-  {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
-  },
-  {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
-  },
-];
-
-function Feature({Svg, title, description}) {
+const TackStacks = ({ stack }) => {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
-      </div>
-    </div>
-  );
+    <>
+      {stack.map((item, index) => (
+        <Chip key={index} label={item} style={{ marginRight: 5 }} />
+      ))}
+    </>
+  )
 }
+
+const MainTabs = () => {
+  return (
+    <Tabs>
+      <TabItem to='/projects' value="PROJETS" default>
+        <h2>Projets</h2>
+      </TabItem>
+      <TabItem value="CURRICULUM VITAE" to='/resume'>
+        <h2>Curriculum vitae</h2>
+        {EXPERIENCES.map((item, index) => (
+          <div key={index} className={styles.experience}>
+            {item.img && <img src={item.img} alt={item.title} />}
+            <h3>{item.title}</h3>
+            <h4>{item.company}</h4>
+            <p>{item.location}</p>
+            <p>{item.dates}</p>
+            <p>{item.workLength}</p>
+            {item.tasks && <TackStacks stack={item.tasks} />}
+          </div>
+        ))}
+
+        {EDUCATION.map((item, index) => (
+          <div key={index} className={styles.experience}>
+            {item.img && <img src={item.img} alt={item.school} />}
+            <h3>{item.school}</h3>
+            <h4>{item.study}</h4>
+            <p>{item.dates}</p>
+          </div>
+        ))}
+      </TabItem>
+    </Tabs>
+  )
+};
 
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
         <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
+          <div className='col col--offset-4 col--8'>
+            <MainTabs />
+          </div>
         </div>
       </div>
     </section>
