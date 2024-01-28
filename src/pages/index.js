@@ -1,15 +1,29 @@
 import React from'react';
 import clsx from 'clsx';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import Socials from '@site/src/components/Socials';
+
 
 import { Avatar, Box } from '@mui/material';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
+
+const socialDetails = [
+  {
+    name: 'Github',
+    url: 'https://github.com/delitamakanda',
+    icon: 'github'
+  },
+  {
+    name: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/delitamakanda/',
+    icon: 'linkedin'
+  }
+];
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -25,6 +39,9 @@ function HomepageHeader() {
           </Box>
         </Box>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
+        {socialDetails && socialDetails.map((social, index) => (
+          <Socials key={index} {...social} />
+        ))}
       </div>
     </header>
   );

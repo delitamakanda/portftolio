@@ -9,7 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Délita MAKANDA',
-  tagline: 'I am a front-end developer. I love learning new things. Also, I am interested in the cloud, coding, gaming and psychological thriller books.',
+  tagline: 'Développeuse front-end passionnée. J\'aime apprendre de nouvelles choses. Je m\'intéresse également au cloud, au code, au gaming et aux romans noirs.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -96,15 +96,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: false,
-        blog: {
-          showReadingTime: false,
-          feedOptions: {
-            type: 'all',
-          },
-          editUrl: 'https://github.com/delitamakanda/portfolio/edit/main/',
-          postsPerPage: 3,
-          truncateMarker: /<!--\s*(truncate)\s*-->/,
-        },
+        blog: false,
         gtag: {
           trackingID: 'G-VJXQMEGQTD',
           anonymizeIP: true,
@@ -128,7 +120,6 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/delitamakanda',
             label: 'GitHub',
