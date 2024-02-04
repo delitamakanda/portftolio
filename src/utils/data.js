@@ -7,6 +7,7 @@ const calculateWorkLength = (startMonth, endMonth) => {
 
 const EXPERIENCES = [
     {
+        id: '1',
         img: 'https://media.licdn.com/dms/image/C4D0BAQGVkgG25rjPZg/company-logo_100_100/0/1631323707965?e=1714608000&v=beta&t=LY1cFAKwCxqmSFLiq9gjA0RO2LKI8dW9jSabbbcHhQA',
         title: 'Développeuse front-end',
         company: 'Activ Browser Technology',
@@ -30,6 +31,7 @@ const EXPERIENCES = [
         skills: ['SCSS', 'Git', 'Gulp', 'HTML/CSS', 'jQuery', 'SQL', 'Cordova','Coldfusion', 'Angular', 'C#', 'Ionic', 'Vue', 'SVN']
     },
     {
+        id: '2',
         img: 'https://media.licdn.com/dms/image/C4D0BAQGVkgG25rjPZg/company-logo_100_100/0/1631323707965?e=1714608000&v=beta&t=LY1cFAKwCxqmSFLiq9gjA0RO2LKI8dW9jSabbbcHhQA',
         title: 'Développeuse front-end',
         company: 'Activ Browser Technology',
@@ -45,6 +47,7 @@ const EXPERIENCES = [
         skills: ['SCSS', 'Git', 'Gulp', 'HTML/CSS', 'jQuery', 'Magento']
     },
     {
+        id: '3',
         img: 'https://media.licdn.com/dms/image/C560BAQEyAZ6xHEkoCw/company-logo_100_100/0/1631340573686?e=1714608000&v=beta&t=s0jscfvjI4h6lahtU2HKKcMp--qnEH4lorUGpPMVDUc',
         title: 'Développeuse front-end',
         company: 'Lafinbox',
@@ -59,6 +62,7 @@ const EXPERIENCES = [
         skills: ['React.JS', 'SCSS', 'Git', 'Cordova', 'Python', 'Gulp', 'Flux']
     },
     {
+        id: '4',
         img: 'https://media.licdn.com/dms/image/C4E0BAQHQ7y_qNa7wcQ/company-logo_100_100/0/1662967938153/prodata_consult_30899_logo?e=1714608000&v=beta&t=6kxTPf-sJuWbV0nNSIZCaz5hQqQRcw_Jb-jpApoMP54',
         title: 'Développeuse front-end',
         company: 'emagine Consulting France',
@@ -74,6 +78,7 @@ const EXPERIENCES = [
         skills: ['jQuery', 'AngularJS', 'Git', 'Grunt', 'jQueryUI']
     },
     {
+        id: '5',
         img: 'https://media.licdn.com/dms/image/C4D0BAQEPYoS6NXYefw/company-logo_100_100/0/1630473954665/neolynk_logo?e=1714608000&v=beta&t=kesadLG7PFFUJhFia7qqZb9myFXZUqP-HnsRPpJjFQ4',
         title: 'Développeuse front-end',
         company: 'Neolynk',
@@ -88,6 +93,7 @@ const EXPERIENCES = [
         skills: ['jQuery', 'Symfony 2', 'php', 'Gulp', 'scss']
     },
     {
+        id: '6',
         img: 'https://static.licdn.com/aero-v1/sc/h/aajlclc14rr2scznz5qm2rj9u',
         title: 'Intégratrice web',
         company: 'Europharma',
@@ -103,6 +109,7 @@ const EXPERIENCES = [
 
 const EDUCATION = [
     {
+        id: '1',
         img: 'https://media.licdn.com/dms/image/C4E0BAQET0MXVeWRmDw/company-logo_100_100/0/1662978520926/f2i_logo?e=1714608000&v=beta&t=s7e8dEMyeJtxOcDwMl1FnCTR-_K1e4__U5zpaGPkrb8',
         school: 'Institut F2I',
         study: 'Titre certifié niveau III Concepteur de supports de communication filière Webdesign',

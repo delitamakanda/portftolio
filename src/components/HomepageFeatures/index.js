@@ -82,7 +82,7 @@ const resumeStyles = makeStyles(() =>
   }),
 );
 
-const TackStacks = ({ stack }) => {
+export const TackStacks = ({ stack }) => {
   return (
     <>
       {stack.map((item, index) => (
@@ -92,14 +92,10 @@ const TackStacks = ({ stack }) => {
   )
 }
 
-const Project = (props) => {
-  const { topics, name, description, html_url, owner } = props;
+export const Project = (props) => {
+  const { topics, name, description, html_url, homepage } = props;
   return (
     <section style={{ flexDirection: 'row', margin: 20, marginLeft: 0, display: 'flex'}}>
-      
-      <div style={{ flex: '1 1', marginRight: 10}}>
-        <img style={{ width: 145, borderRadius: 6, border: '1px solid #e8e8e8', flex: '1 1'}} src={owner.avatar_url} alt={owner.login} />
-      </div>
     
       <div style={{ flex: '2 1'}}>
         <div style={{ display: 'flex', flexDirection: 'row'}}>
@@ -108,6 +104,7 @@ const Project = (props) => {
         <span style={{ fontSize: 14}}>{description}</span>
         <div style={{ display: 'flex'}}>
           <a href={html_url} target='_blank' style={{ marginLeft: '-.7rem', marginRight: '.7rem', padding: '.5rem .7rem'}}>Code</a>
+          { homepage && <a href={homepage} target='_blank' style={{ marginLeft: '.7rem', marginRight: '.7rem', padding: '.5rem.7rem'}}>Site</a> }
         </div>
         { topics && <TackStacks stack={topics} />}
       </div>
@@ -115,12 +112,60 @@ const Project = (props) => {
   )
 }
 
-const Experience = (props) => {
-  const { title, company, location, dates, workLength, tasks, img, skills } = props;
+export const Education = (props) => {
+  const { img, school, study, dates } = props;
   const classes = resumeStyles();
   
   return (
     <section>
+      <div className={classes.container}>
+          <div className={classes.content}>
+            <div className={classes.fullWidth}>
+          <div className={classes.imgContainer}>
+            {img && <img src={img} alt={school} className={classes.img} />}
+          </div>
+          <div className={classes.companyContainer}>
+            <h3 className={classes.jobTitle}>{school}</h3>
+            <span className={classes.company}>{study}</span>
+            <div className={classes.flex}>
+              <h4 className={classes.date}>
+                <span>{ dates }</span>
+              </h4>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export const MainTabs = () => {
+  const [repos, setRepos] = useState([]);
+  const classes = resumeStyles();
+
+  useEffect(() => {
+    fetch('https://api.github.com/users/delitamakanda/repos')
+   .then(async(res) => await res.json())
+   .then((data) => {
+        setRepos(data.filter((item) => item.archived === false).sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at)));
+      })
+      
+     .catch((err) => console.log(err));
+  }, []);
+  return (
+    <Tabs>
+      <TabItem key="'projects'" to='/projects' value="PROJETS"  default>
+        <h2>Projets</h2>
+        {repos && repos.map((item) => (
+          <Project  key={item.id.toString()} {...item} />
+        ))}
+      </TabItem>
+      <TabItem key="'resume'" value="CURRICULUM VITAE" to='/resume' >
+        <h2>Curriculum vitae</h2>
+        {EXPERIENCES.map(({title, company, location, dates, workLength, tasks, img, skills}, idx) => (
+          <div key={idx} className={styles.experience}>
+            <section>
       <div className={classes.container}>
           <div className={classes.content}>
             <div className={classes.fullWidth}>
@@ -149,7 +194,7 @@ const Experience = (props) => {
           </div>
           <div className={classes.city}>
             <p className={classes.information}>
-              {tasks.map(task => {
+              {tasks && tasks.map(task => {
                 return (
                   <>
                     • {task} <br />
@@ -162,64 +207,11 @@ const Experience = (props) => {
         </div>
       </div>
     </section>
-  )
-}
-const Education = (props) => {
-  const { img, school, study, dates } = props;
-  const classes = resumeStyles();
-  
-  return (
-    <section>
-      <div className={classes.container}>
-          <div className={classes.content}>
-            <div className={classes.fullWidth}>
-          <div className={classes.imgContainer}>
-            {img && <img src={img} alt={school} className={classes.img} />}
           </div>
-          <div className={classes.companyContainer}>
-            <h3 className={classes.jobTitle}>{school}</h3>
-            <span className={classes.company}>{study}</span>
-            <div className={classes.flex}>
-              <h4 className={classes.date}>
-                <span>{ dates }</span>
-              </h4>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  )
-}
-
-const MainTabs = () => {
-  const [repos, setRepos] = useState([]);
-
-  useEffect(() => {
-    fetch('https://api.github.com/users/delitamakanda/repos')
-   .then(async(res) => await res.json())
-   .then((data) => {
-        setRepos(data.filter((item) => item.archived === false).sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at)));
-      })
-      
-     .catch((err) => console.log(err));
-  }, []);
-  return (
-    <Tabs>
-      <TabItem to='/projects' value="PROJETS" default>
-        <h2>Projets</h2>
-        {repos.map((item, index) => (
-          <Project key={index} {...item} />
-        ))}
-      </TabItem>
-      <TabItem value="CURRICULUM VITAE" to='/resume'>
-        <h2>Curriculum vitae</h2>
-        {EXPERIENCES.map((item, index) => (
-          <Experience key={index} {...item} />
         ))}
 
-        {EDUCATION.map((item, index) => (
-          <Education key={index} {...item} />
+        {EDUCATION.map((item) => (
+          <Education key={item.id.toString()} {...item}  />
         ))}
       </TabItem>
     </Tabs>
