@@ -3,7 +3,7 @@ import styles from './styles.module.css';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import { EXPERIENCES, EDUCATION } from '../../utils/data';
-import { Chip } from '@mui/material';
+import { Chip, CircularProgress } from '@mui/material';
 import { makeStyles, createStyles } from '@material-ui/core/styles';
 
 const resumeStyles = makeStyles(() =>
@@ -142,22 +142,26 @@ export const Education = (props) => {
 
 export const MainTabs = () => {
   const [repos, setRepos] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
   const classes = resumeStyles();
 
   useEffect(() => {
+    setIsLoading(true);
     fetch('https://api.github.com/users/delitamakanda/repos')
    .then(async(res) => await res.json())
    .then((data) => {
         setRepos(data.filter((item) => item.archived === false).sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at)));
+        setIsLoading(false);
       })
       
-     .catch((err) => console.log(err));
+     .catch((err) => {console.log(err); setIsLoading(false)});
   }, []);
   return (
     <Tabs>
       <TabItem key="'projects'" to='/projects' value="PROJETS"  default>
         <h2>Projets</h2>
-        {repos && repos.map((item) => (
+        {isLoading && <CircularProgress color='secondary' />}
+        {!isLoading && repos && repos.map((item) => (
           <Project  key={item.id.toString()} {...item} />
         ))}
       </TabItem>
