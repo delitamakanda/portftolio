@@ -145,14 +145,12 @@ export const MainTabs = () => {
   const [repos, setRepos] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const classes = resumeStyles();
-  const { siteConfig} = useDocusaurusContext();
 
   useEffect(() => {
     setIsLoading(true);
     fetch('https://api.github.com/users/delitamakanda/repos', {
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${siteConfig.customFields.ACCESS_TOKEN}`
       },
     })
    .then(async(res) => await res.json())
