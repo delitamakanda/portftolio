@@ -26,4 +26,4 @@ jobs:
         run: | 
           npm run build
         env:
-          ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
