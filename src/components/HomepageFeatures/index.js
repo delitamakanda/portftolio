@@ -153,7 +153,7 @@ export const MainTabs = () => {
     fetch('https://api.github.com/users/delitamakanda/repos', {
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `token ${siteConfig.customFields.ACCESS_TOKEN}`
+        'Authorization': `Bearer ${siteConfig.customFields.ACCESS_TOKEN}`
       },
     })
    .then(async(res) => await res.json())
