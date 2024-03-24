@@ -5,7 +5,7 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
-require('dotenv').config({ path: '.env', override: true  });
+require('dotenv').config({ path: '.env' });
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {

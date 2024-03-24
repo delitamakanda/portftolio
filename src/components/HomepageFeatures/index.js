@@ -7,7 +7,6 @@ import { Chip, CircularProgress } from '@mui/material';
 import { makeStyles, createStyles } from '@material-ui/core/styles';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
-
 const resumeStyles = makeStyles(() =>
   createStyles({
     title: {
