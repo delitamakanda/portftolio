@@ -5,12 +5,20 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
+require('dotenv').config({ path: '.env', override: true  });
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Délita MAKANDA',
   tagline: 'Développeuse front-end passionnée. J\'aime apprendre de nouvelles choses. Je m\'intéresse également au cloud, au code, au gaming et aux romans noirs.',
   favicon: 'img/favicon.ico',
+  customFields: {
+    ACCESS_TOKEN: process.env.ACCESS_TOKEN
+  },
+  i18n: {
+    defaultLocale: 'fr',
+    locales: ['fr', 'en'],
+  },
 
   // Set the production url of your site here
   url: 'https://delitamakanda.github.io',
@@ -25,10 +33,6 @@ const config = {
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: 'fr',
-    locales: ['fr', 'en'],
-  },
 
   trailingSlash: true,
 

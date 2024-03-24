@@ -14,10 +14,10 @@
     "write-heading-ids": "docusaurus write-heading-ids"
   },
   "dependencies": {
-    "@docusaurus/core": "3.1.0",
-    "@docusaurus/plugin-google-gtag": "^3.1.0",
-    "@docusaurus/plugin-pwa": "^3.1.0",
-    "@docusaurus/preset-classic": "3.1.0",
+    "@docusaurus/core": "^3.1.1",
+    "@docusaurus/plugin-google-gtag": "^3.1.1",
+    "@docusaurus/plugin-pwa": "^3.1.1",
+    "@docusaurus/preset-classic": "^3.1.1",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@material-ui/core": "^4.12.4",
@@ -31,8 +31,9 @@
     "react-swipeable-views": "^0.14.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.1.0",
-    "@docusaurus/types": "3.1.0",
+    "@docusaurus/module-type-aliases": "^3.1.1",
+    "@docusaurus/types": "^3.1.1",
+    "dotenv": "^16.4.5",
     "husky": "^8.0.3"
   },
   "browserslist": {
