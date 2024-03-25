@@ -27,3 +27,4 @@ jobs:
           npm run build
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
