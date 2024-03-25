@@ -13,7 +13,8 @@ const config = {
   tagline: 'Développeuse front-end passionnée. J\'aime apprendre de nouvelles choses. Je m\'intéresse également au cloud, au code, au gaming et aux romans noirs.',
   favicon: 'img/favicon.ico',
   customFields: {
-    ACCESS_TOKEN: process.env.ACCESS_TOKEN
+    ACCESS_TOKEN: process.env.ACCESS_TOKEN,
+    GH_TOKEN: process.env.GH_TOKEN
   },
   i18n: {
     defaultLocale: 'fr',
