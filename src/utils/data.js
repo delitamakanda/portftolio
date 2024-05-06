@@ -8,7 +8,7 @@ const calculateWorkLength = (startMonth, endMonth) => {
 const EXPERIENCES = [
     {
         id: '1',
-        img: 'https://media.licdn.com/dms/image/C4D0BAQGVkgG25rjPZg/company-logo_100_100/0/1631323707965?e=1714608000&v=beta&t=LY1cFAKwCxqmSFLiq9gjA0RO2LKI8dW9jSabbbcHhQA',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu07KcTic8b7dQ4VR-rOvq9bxQt4lE3MkO6YTQJkoaMw&s',
         title: 'Développeuse front-end',
         company: 'Activ Browser Technology',
         location: 'Guyancourt',
@@ -32,7 +32,7 @@ const EXPERIENCES = [
     },
     {
         id: '2',
-        img: 'https://media.licdn.com/dms/image/C4D0BAQGVkgG25rjPZg/company-logo_100_100/0/1631323707965?e=1714608000&v=beta&t=LY1cFAKwCxqmSFLiq9gjA0RO2LKI8dW9jSabbbcHhQA',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu07KcTic8b7dQ4VR-rOvq9bxQt4lE3MkO6YTQJkoaMw&s',
         title: 'Développeuse front-end',
         company: 'Activ Browser Technology',
         location: 'Boulogne - Billancourt',
@@ -48,7 +48,7 @@ const EXPERIENCES = [
     },
     {
         id: '3',
-        img: 'https://media.licdn.com/dms/image/C560BAQEyAZ6xHEkoCw/company-logo_100_100/0/1631340573686?e=1714608000&v=beta&t=s0jscfvjI4h6lahtU2HKKcMp--qnEH4lorUGpPMVDUc',
+        img: 'https://lestetesdepub.com/wp-content/uploads/2020/03/Group-47.png',
         title: 'Développeuse front-end',
         company: 'Lafinbox',
         location: 'Levallois - Perret',
@@ -63,7 +63,7 @@ const EXPERIENCES = [
     },
     {
         id: '4',
-        img: 'https://media.licdn.com/dms/image/C4E0BAQHQ7y_qNa7wcQ/company-logo_100_100/0/1662967938153/prodata_consult_30899_logo?e=1714608000&v=beta&t=6kxTPf-sJuWbV0nNSIZCaz5hQqQRcw_Jb-jpApoMP54',
+        img: 'https://emagine.fr/wp-content/uploads/2022/07/emagine_thumb.png',
         title: 'Développeuse front-end',
         company: 'emagine Consulting France',
         location: 'Nanterre',
@@ -79,7 +79,7 @@ const EXPERIENCES = [
     },
     {
         id: '5',
-        img: 'https://media.licdn.com/dms/image/C4D0BAQEPYoS6NXYefw/company-logo_100_100/0/1630473954665/neolynk_logo?e=1714608000&v=beta&t=kesadLG7PFFUJhFia7qqZb9myFXZUqP-HnsRPpJjFQ4',
+        img: 'https://www.greatplacetowork.fr/assets/Affiliate-France/WorkplaceLogos2019/_resampled/ScaleWidthWyI2MDAiXQ/FR-00169-NEOLYNK.png',
         title: 'Développeuse front-end',
         company: 'Neolynk',
         location: 'Paris',
@@ -110,7 +110,7 @@ const EXPERIENCES = [
 const EDUCATION = [
     {
         id: '1',
-        img: 'https://media.licdn.com/dms/image/C4E0BAQET0MXVeWRmDw/company-logo_100_100/0/1662978520926/f2i_logo?e=1714608000&v=beta&t=s7e8dEMyeJtxOcDwMl1FnCTR-_K1e4__U5zpaGPkrb8',
+        img: 'https://media.licdn.com/dms/image/C4E0BAQET0MXVeWRmDw/company-logo_200_200/0/1662978520926/f2i_logo?e=2147483647&v=beta&t=htXnqo2E-uS6D1YlMqX3hc0Ft1B71kVfYfjfYBCXymQ',
         school: 'Institut F2I',
         study: 'Titre certifié niveau III Concepteur de supports de communication filière Webdesign',
         dates: '2009 - 2010',
