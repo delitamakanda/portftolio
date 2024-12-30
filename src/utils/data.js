@@ -79,7 +79,7 @@ const EXPERIENCES = [
     },
     {
         id: '5',
-        img: 'https://www.greatplacetowork.fr/assets/Affiliate-France/WorkplaceLogos2019/_resampled/ScaleWidthWyI2MDAiXQ/FR-00169-NEOLYNK.png',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSvtWAwrLQtIuhuo0Ygh6ZiDdw4HaOeJXpJA&s',
         title: 'Développeuse front-end',
         company: 'Neolynk',
         location: 'Paris',
