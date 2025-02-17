@@ -22,13 +22,13 @@ const EXPERIENCES = [
 'Développement front-end d\'un module de gestion de stands pour la restauration collective',
 'Implémentation de tags analytics pour le marketing',
 'Développement front-end d\'un module de retypage de plateaux repas',
-'Web app de commande de repas (HTML, SCSS, Angular 12, Material Design)',
+'Web app de commande de repas (HTML, SCSS, Angular 18, Material Design 3)',
 'Tests unitaires (jest, karma)',
 'Assistance à la mise en place d\'un outil de flux de travail de fusion destinée à la livraison continue et est basé sur les branches GIT de fonctionnalités (git-octopus).',
 'Surveillance des infrastructures Coldfusion et Frontend via un système de logs et de monitoring (Application Insights)',
 'Maintenance des applications permettant l\'encaissement automatique des repas avec badge (C# et Ionic)',
         ],
-        skills: ['SCSS', 'Git', 'Gulp', 'HTML/CSS', 'jQuery', 'SQL', 'Cordova','Coldfusion', 'Angular', 'C#', 'Ionic', 'Vue', 'SVN']
+        skills: ['SCSS', 'Git', 'Gulp', 'HTML/CSS', 'jQuery', 'SQL', 'Cordova','Coldfusion', 'Angular', 'C#', 'Ionic', 'Vue.js', 'Azure Devops']
     },
     {
         id: '2',
