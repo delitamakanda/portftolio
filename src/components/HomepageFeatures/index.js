@@ -157,7 +157,7 @@ export const MainTabs = () => {
     })
    .then(async(res) => await res.json())
    .then((data) => {
-        setRepos(data.filter((item) => item.archived === false).sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at)));
+        setRepos(data.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at)));
         setIsLoading(false);
       })
       
