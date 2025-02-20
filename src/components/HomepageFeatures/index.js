@@ -149,15 +149,16 @@ export const MainTabs = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    fetch('https://api.github.com/users/delitamakanda/repos', {
+    fetch('https://api.github.com/users/delitamakanda/repos?sort=updated&per_page=99', {
       headers: {
         'Content-Type': 'application/json',
+        'Accept': 'application/vnd.github+json',
         'Authorization': siteConfig.customFields.GH_TOKEN
       },
     })
    .then(async(res) => await res.json())
    .then((data) => {
-        setRepos(data.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at)));
+        setRepos(data);
         setIsLoading(false);
       })
       
