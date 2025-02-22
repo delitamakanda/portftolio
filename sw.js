@@ -608,7 +608,7 @@ function waitUntil(event, asyncFn) {
 
 // @ts-ignore
 try {
-    self['workbox:core:7.0.0'] && _();
+    self['workbox:core:7.2.0'] && _();
 }
 catch (e) { }
 
@@ -1782,7 +1782,7 @@ __webpack_require__.r(__webpack_exports__);
 
 // @ts-ignore
 try {
-    self['workbox:precaching:7.0.0'] && _();
+    self['workbox:precaching:7.2.0'] && _();
 }
 catch (e) { }
 
@@ -2096,6 +2096,32 @@ __webpack_require__.r(__webpack_exports__);
  */
 
 
+
+
+/***/ }),
+
+/***/ "./node_modules/workbox-precaching/index.mjs":
+/*!***************************************************!*\
+  !*** ./node_modules/workbox-precaching/index.mjs ***!
+  \***************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   PrecacheController: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.PrecacheController),
+/* harmony export */   PrecacheFallbackPlugin: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.PrecacheFallbackPlugin),
+/* harmony export */   PrecacheRoute: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.PrecacheRoute),
+/* harmony export */   PrecacheStrategy: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.PrecacheStrategy),
+/* harmony export */   addPlugins: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.addPlugins),
+/* harmony export */   addRoute: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.addRoute),
+/* harmony export */   cleanupOutdatedCaches: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.cleanupOutdatedCaches),
+/* harmony export */   createHandlerBoundToURL: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.createHandlerBoundToURL),
+/* harmony export */   getCacheKeyForURL: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.getCacheKeyForURL),
+/* harmony export */   matchPrecache: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.matchPrecache),
+/* harmony export */   precache: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.precache),
+/* harmony export */   precacheAndRoute: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.precacheAndRoute)
+/* harmony export */ });
+/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.js */ "./node_modules/workbox-precaching/index.js");
 
 
 /***/ }),
@@ -3333,7 +3359,7 @@ class Router {
 
 // @ts-ignore
 try {
-    self['workbox:routing:7.0.0'] && _();
+    self['workbox:routing:7.2.0'] && _();
 }
 catch (e) { }
 
@@ -4086,8 +4112,8 @@ class StrategyHandler {
      * defined on the strategy object.
      *
      * The following plugin lifecycle methods are invoked when using this method:
-     * - cacheKeyWillByUsed()
-     * - cachedResponseWillByUsed()
+     * - cacheKeyWillBeUsed()
+     * - cachedResponseWillBeUsed()
      *
      * @param {Request|string} key The Request or URL to use as the cache key.
      * @return {Promise<Response|undefined>} A matching response, if found.
@@ -4125,7 +4151,7 @@ class StrategyHandler {
      * the strategy object.
      *
      * The following plugin lifecycle methods are invoked when using this method:
-     * - cacheKeyWillByUsed()
+     * - cacheKeyWillBeUsed()
      * - cacheWillUpdate()
      * - cacheDidUpdate()
      *
@@ -4402,35 +4428,9 @@ class StrategyHandler {
 
 // @ts-ignore
 try {
-    self['workbox:strategies:7.0.0'] && _();
+    self['workbox:strategies:7.2.0'] && _();
 }
 catch (e) { }
-
-
-/***/ }),
-
-/***/ "./node_modules/workbox-precaching/index.mjs":
-/*!***************************************************!*\
-  !*** ./node_modules/workbox-precaching/index.mjs ***!
-  \***************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   PrecacheController: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.PrecacheController),
-/* harmony export */   PrecacheFallbackPlugin: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.PrecacheFallbackPlugin),
-/* harmony export */   PrecacheRoute: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.PrecacheRoute),
-/* harmony export */   PrecacheStrategy: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.PrecacheStrategy),
-/* harmony export */   addPlugins: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.addPlugins),
-/* harmony export */   addRoute: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.addRoute),
-/* harmony export */   cleanupOutdatedCaches: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.cleanupOutdatedCaches),
-/* harmony export */   createHandlerBoundToURL: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.createHandlerBoundToURL),
-/* harmony export */   getCacheKeyForURL: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.getCacheKeyForURL),
-/* harmony export */   matchPrecache: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.matchPrecache),
-/* harmony export */   precache: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.precache),
-/* harmony export */   precacheAndRoute: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.precacheAndRoute)
-/* harmony export */ });
-/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.js */ "./node_modules/workbox-precaching/index.js");
 
 
 /***/ })
@@ -4504,7 +4504,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+// This entry needs to be wrapped in an IIFE because it needs to be isolated against other modules in the chunk.
 (() => {
 /*!*******************************************************!*\
   !*** ./node_modules/@docusaurus/plugin-pwa/lib/sw.js ***!
@@ -4556,7 +4556,7 @@ function getPossibleURLs(url) {
 (async () => {
     const params = parseSwParams();
     // eslint-disable-next-line no-underscore-dangle
-    const precacheManifest = [{"revision":"1e5c35d0eb98c430c6d5bae2c769a800","url":"404.html"},{"revision":"fe3f76ecc8036e1aa121abb29c5ad4d2","url":"assets/css/styles.69b62203.css"},{"revision":"83af34b3440b2c97e8df82ad99cf35e8","url":"assets/js/0224a1d9.a408ea10.js"},{"revision":"dd31baaf10087fbb8d00e639702ad444","url":"assets/js/131.58891b02.js"},{"revision":"29c0d7c4b3bcd018ac948ec9e0cb9366","url":"assets/js/1f391b9e.3f305e77.js"},{"revision":"4b7343f39b2fe9095762c6eb8013f44c","url":"assets/js/230.cf4066f3.js"},{"revision":"0fb482fd9c2fca2d985f0ec30bce06d2","url":"assets/js/283.a9090d2e.js"},{"revision":"cfe76cb187d1d1e8a9264f04f6fc881d","url":"assets/js/393be207.9a50631e.js"},{"revision":"9af7a00719cc19cdfeb48a57295ac16d","url":"assets/js/460.86a42ac6.js"},{"revision":"f9610bf652de867da970f2b25b3c9aa3","url":"assets/js/548.e36d1443.js"},{"revision":"a19be19d196610f3533da74eb5b07fab","url":"assets/js/c4f5d8e4.910e6f0c.js"},{"revision":"6836418ffacec1719999ae41eccd75d6","url":"assets/js/main.54b80135.js"},{"revision":"30f2fdf2583fd6fb32bf7cab57ee1696","url":"assets/js/runtime~main.ab0b4956.js"},{"revision":"456c24071ef563bc29d44554811697cc","url":"index.html"},{"revision":"97c9f5e80efa01fc31fa2d401862f7c7","url":"manifest.json"},{"revision":"6871726ac1f766e9d0b636c304308151","url":"markdown-page/index.html"},{"revision":"000de4a48405bd21b7eec1abc07ede6c","url":"img/docusaurus-social-card.jpg"},{"revision":"7fa1a026116afe175cae818030d4ffc4","url":"img/docusaurus.png"},{"revision":"4343e07bf942aefb5f334501958fbc0e","url":"img/favicon.ico"},{"revision":"aa4fa2cdc39d33f2ee3b8f245b6d30d9","url":"img/logo.svg"},{"revision":"a6b83d7b4c3cf36cb21eb7a9721716dd","url":"img/undraw_docusaurus_mountain.svg"},{"revision":"b64ae8e3c10e5ff2ec85a653cfe6edf8","url":"img/undraw_docusaurus_react.svg"},{"revision":"8fa6e79a15c385d7b2dc4bb761a2e9e3","url":"img/undraw_docusaurus_tree.svg"}];
+    const precacheManifest = [{"revision":"47649c7e5039fc0add66ddbe70c5b318","url":"404.html"},{"revision":"ecf5a01f20607126e5175bcf356e55a5","url":"assets/css/styles.92719d82.css"},{"revision":"2fc0382e6bba39c9eae3dc18ef56a540","url":"assets/js/0224a1d9.5c88a7fb.js"},{"revision":"620d1fbffb76a220fdcd53251778a1cf","url":"assets/js/1f391b9e.0a585f50.js"},{"revision":"d56697c6805f45ce0a0c6780b25690a3","url":"assets/js/222.e343b840.js"},{"revision":"9f35b9c503d5b78f642043302358e563","url":"assets/js/334.d8b5e694.js"},{"revision":"3fe9a61ea213dcefb6bba4cfb86c1729","url":"assets/js/362.ce614ed6.js"},{"revision":"29aa8ae81a5fe45db12d6e95538539a1","url":"assets/js/393be207.03800ae4.js"},{"revision":"4909f6246db3539bb31313ca2a295148","url":"assets/js/730.7cd0b473.js"},{"revision":"fa7a7db16f18b6ebbd5f5ae486bc3f81","url":"assets/js/780.b0dfd098.js"},{"revision":"52104b5c8087e46d5be21454530f5678","url":"assets/js/c4f5d8e4.47ca27fc.js"},{"revision":"7a75da0933e1a40b4021abbfbd798c80","url":"assets/js/main.2c484583.js"},{"revision":"e808b2517ea7a0f815d7bbeafbe27ef5","url":"assets/js/runtime~main.6c49f590.js"},{"revision":"1ec3c7fdc8eb1e546f676544b2586628","url":"index.html"},{"revision":"97c9f5e80efa01fc31fa2d401862f7c7","url":"manifest.json"},{"revision":"567681a128e78317c21517a01e9c990a","url":"markdown-page/index.html"},{"revision":"000de4a48405bd21b7eec1abc07ede6c","url":"img/docusaurus-social-card.jpg"},{"revision":"7fa1a026116afe175cae818030d4ffc4","url":"img/docusaurus.png"},{"revision":"4343e07bf942aefb5f334501958fbc0e","url":"img/favicon.ico"},{"revision":"aa4fa2cdc39d33f2ee3b8f245b6d30d9","url":"img/logo.svg"},{"revision":"a6b83d7b4c3cf36cb21eb7a9721716dd","url":"img/undraw_docusaurus_mountain.svg"},{"revision":"b64ae8e3c10e5ff2ec85a653cfe6edf8","url":"img/undraw_docusaurus_react.svg"},{"revision":"8fa6e79a15c385d7b2dc4bb761a2e9e3","url":"img/undraw_docusaurus_tree.svg"}];
     const controller = new workbox_precaching__WEBPACK_IMPORTED_MODULE_0__.PrecacheController({
         // Safer to turn this true?
         fallbackToNetwork: true,
