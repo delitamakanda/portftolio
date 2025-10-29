@@ -207,11 +207,11 @@ export const MainTabs = () => {
           </div>
           <div className={classes.city}>
             <p className={classes.information}>
-              {tasks && tasks.map(task => {
+              {tasks && tasks.map((task, idx) => {
                 return (
-                  <>
+                  <span key={idx}>
                     • {task} <br />
-                  </>
+                  </span>
                 )
               })}
             </p>
