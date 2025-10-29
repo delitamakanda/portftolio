@@ -6,6 +6,7 @@ import { EXPERIENCES, EDUCATION } from '../../utils/data';
 import { Chip, CircularProgress } from '@mui/material';
 import { makeStyles, createStyles } from '@material-ui/core/styles';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import FaqAgent from "../FaqAgent";
 
 const resumeStyles = makeStyles(() =>
   createStyles({
@@ -225,6 +226,9 @@ export const MainTabs = () => {
         {EDUCATION.map((item) => (
           <Education key={item.id.toString()} {...item}  />
         ))}
+      </TabItem>
+        <TabItem key="'faq'" value="FAQ" to='/faq'>
+        <FaqAgent />
       </TabItem>
     </Tabs>
   )
