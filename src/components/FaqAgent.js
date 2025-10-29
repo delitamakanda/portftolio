@@ -39,7 +39,7 @@ export default function FaqAgent() {
             <Typography variant="title">FAQ</Typography>
             <form onSubmit={ask} style={{ display: 'flex', gap: 8 }}>
                 <Input value={question} onChange={e => setQuestion(e.target.value)} required placeholder="Ex: Avec quelles technos tu bosses ?" style={{ flex: 1 }} />
-                <Button color="primary" disabled={loading}>{loading ? '…' : 'Demander'}</Button>
+                <Button type="submit" color="primary" disabled={loading}>{loading ? '…' : 'Demander'}</Button>
             </form>
             {error && <p style={{ color: 'crimson', marginTop: 12 }}>{error}</p>}
             {answer && <p style={{ marginTop: 12 }}>{answer}</p>}
