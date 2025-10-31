@@ -22,5 +22,83 @@
     "q": "Es-tu disponible en freelance ?",
     "a": "Je privilégie des postes stables avec une vision long-terme. Je m’épanouis dans des environnements structurés et stimulants, où je peux contribuer durablement et monter en compétence.",
     "embedding": [0]
+  },
+  {
+    "id": 4,
+    "q": "Quelle est ta méthode de travail ?",
+    "a": "Construire vite, mais propre. Prioriser la valeur produit avant la beauté du code — tout en garantissant qualité, accessibilité et scalabilité.",
+    "embedding": [0]
+  },
+  {
+    "id": 5,
+    "q": "As-tu de l’expérience en design system ?",
+    "a": "Oui. Intégration Tailwind, Shadcn, Material UI, composants réutilisables. J’aime créer des interfaces cohérentes, simples et faciles à maintenir.",
+    "embedding": [0]
+  },
+  {
+    "id": 6,
+    "q": "Sais-tu travailler avec des APIs complexes ?",
+    "a": "Oui : microservices, REST, GraphQL",
+    "embedding": [0]
+  },
+  {
+    "id": 7,
+    "q": "Comment gères-tu la qualité du code ?",
+    "a": "Tests unitaires + e2e, linting, CI/CD, revue de code.",
+    "embedding": [0]
+  },
+  {
+    "id": 8,
+    "q": "Tu utilises quoi pour livrer du code solide en équipe ?",
+    "a": "GitOps, pipelines CI/CD et branches clean (chore, feature, hotfix, bugfix).",
+    "embedding": [0]
+  },
+  {
+    "id": 9,
+    "q": "Comment t’assures-tu que l’UX est optimale ?",
+    "a": "Design accessible et mobile-first.",
+    "embedding": [0]
+  },
+  {
+    "id": 10,
+    "q": "Peux-tu travailler avec des équipes non-tech ?",
+    "a": "Oui, et j’aime ça. Je vulgarise, j’écoute, je clarifie. L’objectif : transformer de bonnes idées en produits utilisables.",
+    "embedding": [0]
+  },
+  {
+    "id": 11,
+    "q": "Comment gères-tu l’apprentissage et la veille ?",
+    "a": "Formation continue, lectures tech, projets persos, side-apps. Je suis allergique au mode 'j’ai tout vu'.",
+    "embedding": [0]
+  },
+  {
+    "id": 12,
+    "q": "Pourquoi choisir de travailler avec toi ?",
+    "a": "Fiabilité, rigueur, curiosité, sens produit. Je suis passionnée par le développement web et je veux apprendre et progresser. Je m'adapte à des environnements variés et à des compétences différentes.",
+    "embedding": [0]
+  },
+  {
+    "id": 13,
+    "q": "As-tu des exemples de projets concrets que tu as réalisés ?",
+    "a": "Oui — quelques exemples récents :\n• Dashboard de suivi d’investissements (Django + Streamlit)\n• Plateforme de fidélité (.NET)\n• App mobile de budget voyage (React JS et Dexie)\n• Système interne de tickets en temps réel (Vue + WebSockets)\n• Refonte UI + design system (Angular 19)\n\nCes projets m’ont permis de livrer des produits stables, performants.\n👉 Voir les détails dans la section 'Projets'.",
+    "embedding": [0]
+  },
+  {
+    "id": 14,
+    "q": "Quel type de missions ou projets t'intéressent le plus ?",
+    "a": "Des projets avec beaucoup d'impact : apps web/mobile, dashboards, design system, microservices. J’aime transformer des besoins flous en solutions concrètes et performantes.",
+    "embedding": [0]
+  },
+  {
+    "id": 15,
+    "q": "Peux-tu travailler sur un MVP ou un projet existant ?",
+    "a": "Oui. Que ce soit démarrer from scratch ou reprendre un legacy, j’aime structurer, optimiser et livrer rapidement de la valeur sans casser la prod (promis).",
+    "embedding": [0]
+  },
+  {
+    "id": 16,
+    "q": "Tu documentes ton travail ?",
+    "a": "Oui, mais je n'écris pas un roman. Juste un readme clair, diagrammes quand nécessaire, Storybook pour les composants. Documentation utile, je n'aime pas la bureaucratie.",
+    "embedding": [0]
   }
 ]
