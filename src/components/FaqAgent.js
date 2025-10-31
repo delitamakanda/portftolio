@@ -35,16 +35,16 @@ export default function FaqAgent() {
         }
     }
     return (
-        <div style={{ maxWidth: 640, margin: '2rem auto', padding: 16, border: '1px solid #eee', borderRadius: 12 }}>
-            <Typography variant="title">FAQ</Typography>
-            <form onSubmit={ask} style={{ display: 'flex', gap: 8 }}>
+        <section>
+            <Typography variant="subtitle1" mb="12" component="h2">FAQ</Typography>
+            <form onSubmit={ask} style={{ display: 'flex'}}>
                 <Input value={question} onChange={e => setQuestion(e.target.value)} required placeholder="Ex: Avec quelles technos tu bosses ?" style={{ flex: 1 }} />
-                <Button type="submit" color="primary" disabled={loading}>{loading ? '…' : 'Demander'}</Button>
+                <Button type="submit" disabled={loading}>{loading ? '…' : 'Demander'}</Button>
             </form>
-            {error && <p style={{ color: 'crimson', marginTop: 12 }}>{error}</p>}
-            {answer && <p style={{ marginTop: 12 }}>{answer}</p>}
-            <small style={{ color: '#666' }}>Réponses basées sur une FAQ interne.</small>
-        </div>
+            {error && <Typography mt="12" variant="body1" component="p">{error}</Typography>}
+            {answer && <Typography mt="12" mb="12" variant="body1" component="p">{answer}</Typography>}
+            <Typography mt="12" variant="body1" component="small">Réponses basées sur une FAQ interne.</Typography>
+        </section>
     );
 
 }
