@@ -100,5 +100,83 @@
     "q": "Tu documentes ton travail ?",
     "a": "Oui, mais je n'écris pas un roman. Juste un readme clair, diagrammes quand nécessaire, Storybook pour les composants. Documentation utile, je n'aime pas la bureaucratie.",
     "embedding": [0]
+  },
+  {
+    "id": 17,
+    "q": "Tu touches aussi au legacy ?",
+    "a": "Oui. Je ne pleure pas devant du Java 8 ou du ColdFusion (j'ai vu pire, et j'ai survécu).",
+    "embedding": [0]
+  },
+  {
+    "id": 18,
+    "q": "Tu fais du mobile ?",
+    "a": "Oui — Ionic et PWA, offline-first quand ça compte.",
+    "embedding": [0]
+  },
+  {
+    "id": 19,
+    "q": "Tu utilises quoi pour la qualité et la DX ?",
+    "a": "linting strict, docs minimalistes, CI/CD obligatoire, monitoring",
+    "embedding": [0]
+  },
+  {
+    "id": 20,
+    "q": "Sécurité?",
+    "a": "JWT, OAuth2, RBAC, bonnes pratiques OWASP.\nSécurité ≠ stress — sécurité = discipline.",
+    "embedding": [0]
+  },
+  {
+    "id": 21,
+    "q": "Tu préfères startup ou entreprise établie ?",
+    "a": "Les deux, du moment que :\n\nil y a une vision claire\n\non ne confond pas vitesse et chaos\n\nles décisions se basent sur la réalité, pas l’ego",
+    "embedding": [0]
+  },
+  {
+    "id": 22,
+    "q": "Comment tu communiques ?",
+    "a": "Directement, avec tact.\nSi quelque chose cloche, on en parle",
+    "embedding": [0]
+  },
+  {
+    "id": 23,
+    "q": "Comment tu gères la pression ?",
+    "a": "Priorisation + calme.\nLe code écrit avec panique finit souvent par coûter une prime de stress... au futur toi.",
+    "embedding": [0]
+  },
+  {
+    "id": 24,
+    "q": "Team remote ou bureau ?",
+    "a": "Flexible.\nLe livrable compte plus que la chaise où je suis assise.",
+    "embedding": [0]
+  },
+  {
+    "id": 25,
+    "q": "Ta mentalité ?",
+    "a": "Construire, apprendre, améliorer.",
+    "embedding": [0]
+  },
+  {
+    "id": 26,
+    "q": "Dogme technique ?",
+    "a": "Non. J’aime la technique, pas la secte.\nSi ça marche bien, c’est une bonne solution.",
+    "embedding": [0]
+  },
+  {
+    "id": 27,
+    "q": "Feedback ?",
+    "a": "Constructif, régulier, humain.\nOn progresse tous mieux quand l’ego ne pilote pas.",
+    "embedding": [0]
+  },
+  {
+    "id": 28,
+    "q": "Comment tu gère les problèmes?",
+    "a": "Priorisation + clair + résolu rapidement.\nQuand on a une idée, on la prend.",
+    "embedding": [0]
+  },
+  {
+    "id": 29,
+    "q": "Ta règle d’or ?",
+    "a": "Rendre le futur developpement plus facile qu’hier. S'améliorer continuellement.",
+    "embedding": [0]
   }
 ]
