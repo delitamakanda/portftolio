@@ -95,7 +95,7 @@ export const TackStacks = ({ stack }) => {
 }
 
 export const Project = (props) => {
-  const { topics, name, description, html_url, homepage } = props;
+  const { topics, name, description, html_url, homepage, language } = props;
   return (
     <section style={{ flexDirection: 'row', margin: 20, marginLeft: 0, display: 'flex'}}>
     
@@ -108,7 +108,7 @@ export const Project = (props) => {
           <a href={html_url} target='_blank' style={{ marginLeft: '-.7rem', marginRight: '.7rem', padding: '.5rem .7rem'}}>Code</a>
           { homepage && <a href={homepage} target='_blank' style={{ marginLeft: '.7rem', marginRight: '.7rem', padding: '.5rem.7rem'}}>Site</a> }
         </div>
-        { topics && <TackStacks stack={topics} />}
+        { topics && <TackStacks stack={topics} />} {language && <>{language}</>}
       </div>
     </section>
   )
