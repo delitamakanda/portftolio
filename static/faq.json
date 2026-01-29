@@ -225,7 +225,7 @@
   },
   {
     "id": 28,
-    "q": "Comment tu gère les problèmes?",
+    "q": "Comment tu gères les problèmes?",
     "a": "Priorisation + clair + résolu rapidement.\nQuand on a une idée, on la prend.",
     "embedding": [
       0
@@ -234,7 +234,7 @@
   {
     "id": 29,
     "q": "Ta règle d’or ?",
-    "a": "Rendre le futur developpement plus facile qu’hier. S'améliorer continuellement.",
+    "a": "Rendre le futur développement plus facile qu’hier. S'améliorer continuellement.",
     "embedding": [
       0
     ]
