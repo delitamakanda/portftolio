@@ -98,7 +98,7 @@
   {
     "id": 12,
     "q": "Pourquoi choisir de travailler avec toi ?",
-    "a": "Fiabilité, rigueur, curiosité, sens produit. Je suis passionnée par le développement web et je veux apprendre et progresser. Je m'adapte à des environnements variés et à des compétences différentes.",
+    "a": "Fiabilité, rigueur, curiosité, créativité. Je suis passionnée par le développement web et je veux apprendre et progresser. Je m'adapte à des environnements variés et à des compétences différentes.",
     "embedding": [
       0
     ]
@@ -153,8 +153,8 @@
   },
   {
     "id": 19,
-    "q": "Tu utilises quoi pour la qualité et la DX ?",
-    "a": "linting strict, docs minimalistes, CI/CD obligatoire, monitoring",
+    "q": "Tu utilises quoi pour la qualité et l'expérience développeur ?",
+    "a": "linting strict (Husky), docs minimalistes, CI/CD obligatoire, monitoring",
     "embedding": [
       0
     ]
@@ -234,7 +234,7 @@
   {
     "id": 29,
     "q": "Ta règle d’or ?",
-    "a": "Rendre le futur développement plus facile qu’hier. S'améliorer continuellement.",
+    "a": "S'améliorer continuellement.",
     "embedding": [
       0
     ]
@@ -258,7 +258,7 @@
   {
     "id": 32,
     "q": "Comment optimises-tu les performances ?",
-    "a": "Code splitting, lazy loading, optimisation des bundles, cache intelligent, CDN quand nécessaire. Je mesure avant d'optimiser — pas d'optimisation prématurée.",
+    "a": "Code splitting, lazy loading, optimisation des bundles, cache intelligent, CDN quand nécessaire.",
     "embedding": [
       0
     ]
@@ -282,7 +282,7 @@
   {
     "id": 35,
     "q": "Quels outils de monitoring utilises-tu ?",
-    "a": "Sentry pour les erreurs, Datadog ou Grafana pour les métriques, Lighthouse pour la performance web. Je crois au monitoring proactif — détecter avant que ça pète.",
+    "a": "Datadog ou App Insight pour les métriques, Lighthouse pour la performance web.",
     "embedding": [
       0
     ]
@@ -298,7 +298,7 @@
   {
     "id": 37,
     "q": "Quelles bases de données tu maîtrises ?",
-    "a": "PostgreSQL, MySQL, MongoDB, Redis pour le cache. Je sais modéliser, optimiser les requêtes et gérer les migrations sans casser la prod.",
+    "a": "PostgreSQL, MySQL, Redis pour le cache. Je sais modéliser, optimiser les requêtes et gérer les migrations sans casser la prod.",
     "embedding": [
       0
     ]
@@ -306,7 +306,7 @@
   {
     "id": 38,
     "q": "Tu utilises quels outils de collaboration ?",
-    "a": "Slack, Teams, Jira, Notion, Linear. L'outil importe peu — ce qui compte c'est la clarté de la communication et la fluidité du workflow.",
+    "a": "Slack, Teams, Jira, Notion. L'outil importe peu, ce qui compte c'est la clarté de la communication et la fluidité du workflow.",
     "embedding": [
       0
     ]
@@ -346,7 +346,7 @@
   {
     "id": 43,
     "q": "Tu as déjà travaillé en remote à 100% ?",
-    "a": "Oui. Organisation, rituels d'équipe clairs, outils de communication efficaces. Remote ne veut pas dire isolé — ça veut dire flexible et autonome.",
+    "a": "Oui. Organisation, rituels d'équipe clairs, outils de communication efficaces. Remote ne veut pas dire isolé; ça veut dire flexible et autonome.",
     "embedding": [
       0
     ]
