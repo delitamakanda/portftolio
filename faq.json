@@ -3,180 +3,360 @@
     "id": 0,
     "q": "Quels services proposes-tu ?",
     "a": "Développement full-stack (Vue, React, Angular, Coldfusion, Java, .NET), intégration design system, performance et accessibilité, microservices, monitoring.",
-    "embedding": [0]
+    "embedding": [
+      0
+    ]
   },
   {
     "id": 1,
     "q": "Comment te contacter ?",
     "a": "Via linkedin ou par email pro : delita.makanda@gmail.com.",
-    "embedding": [0]
+    "embedding": [
+      0
+    ]
   },
   {
     "id": 2,
     "q": "Quelles technos maîtrises-tu ?",
     "a": "Vue 3/4, React 18/19, Angular 18/19, TypeScript, Tailwind, Shadcn, Vite, Next, CI/CD Docker.",
-    "embedding": [0]
+    "embedding": [
+      0
+    ]
   },
   {
     "id": 3,
     "q": "Es-tu disponible en freelance ?",
     "a": "Je privilégie des postes stables avec une vision long-terme. Je m’épanouis dans des environnements structurés et stimulants, où je peux contribuer durablement et monter en compétence.",
-    "embedding": [0]
+    "embedding": [
+      0
+    ]
   },
   {
     "id": 4,
     "q": "Quelle est ta méthode de travail ?",
     "a": "Construire vite, mais propre. Prioriser la valeur produit avant la beauté du code — tout en garantissant qualité, accessibilité et scalabilité.",
-    "embedding": [0]
+    "embedding": [
+      0
+    ]
   },
   {
     "id": 5,
     "q": "As-tu de l’expérience en design system ?",
     "a": "Oui. Intégration Tailwind, Shadcn, Material UI, composants réutilisables. J’aime créer des interfaces cohérentes, simples et faciles à maintenir.",
-    "embedding": [0]
+    "embedding": [
+      0
+    ]
   },
   {
     "id": 6,
     "q": "Sais-tu travailler avec des APIs complexes ?",
     "a": "Oui : microservices, REST, GraphQL",
-    "embedding": [0]
+    "embedding": [
+      0
+    ]
   },
   {
     "id": 7,
     "q": "Comment gères-tu la qualité du code ?",
     "a": "Tests unitaires + e2e, linting, CI/CD, revue de code.",
-    "embedding": [0]
+    "embedding": [
+      0
+    ]
   },
   {
     "id": 8,
     "q": "Tu utilises quoi pour livrer du code solide en équipe ?",
     "a": "GitOps, pipelines CI/CD et branches clean (chore, feature, hotfix, bugfix).",
-    "embedding": [0]
+    "embedding": [
+      0
+    ]
   },
   {
     "id": 9,
     "q": "Comment t’assures-tu que l’UX est optimale ?",
     "a": "Design accessible et mobile-first.",
-    "embedding": [0]
+    "embedding": [
+      0
+    ]
   },
   {
     "id": 10,
     "q": "Peux-tu travailler avec des équipes non-tech ?",
     "a": "Oui, et j’aime ça. Je vulgarise, j’écoute, je clarifie. L’objectif : transformer de bonnes idées en produits utilisables.",
-    "embedding": [0]
+    "embedding": [
+      0
+    ]
   },
   {
     "id": 11,
     "q": "Comment gères-tu l’apprentissage et la veille ?",
     "a": "Formation continue, lectures tech, projets persos, side-apps. Je suis allergique au mode 'j’ai tout vu'.",
-    "embedding": [0]
+    "embedding": [
+      0
+    ]
   },
   {
     "id": 12,
     "q": "Pourquoi choisir de travailler avec toi ?",
-    "a": "Fiabilité, rigueur, curiosité, sens produit. Je suis passionnée par le développement web et je veux apprendre et progresser. Je m'adapte à des environnements variés et à des compétences différentes.",
-    "embedding": [0]
+    "a": "Fiabilité, rigueur, curiosité, créativité. Je suis passionnée par le développement web et je veux apprendre et progresser. Je m'adapte à des environnements variés et à des compétences différentes.",
+    "embedding": [
+      0
+    ]
   },
   {
     "id": 13,
     "q": "As-tu des exemples de projets concrets que tu as réalisés ?",
     "a": "Oui — quelques exemples récents :\n• Dashboard de suivi d’investissements (Django + Streamlit)\n• Plateforme de fidélité (.NET)\n• App mobile de budget voyage (React JS et Dexie)\n• Système interne de tickets en temps réel (Vue + WebSockets)\n• Refonte UI + design system (Angular 19)\n\nCes projets m’ont permis de livrer des produits stables, performants.\n👉 Voir les détails dans la section 'Projets'.",
-    "embedding": [0]
+    "embedding": [
+      0
+    ]
   },
   {
     "id": 14,
     "q": "Quel type de missions ou projets t'intéressent le plus ?",
     "a": "Des projets avec beaucoup d'impact : apps web/mobile, dashboards, design system, microservices. J’aime transformer des besoins flous en solutions concrètes et performantes.",
-    "embedding": [0]
+    "embedding": [
+      0
+    ]
   },
   {
     "id": 15,
     "q": "Peux-tu travailler sur un MVP ou un projet existant ?",
     "a": "Oui. Que ce soit démarrer from scratch ou reprendre un legacy, j’aime structurer, optimiser et livrer rapidement de la valeur sans casser la prod (promis).",
-    "embedding": [0]
+    "embedding": [
+      0
+    ]
   },
   {
     "id": 16,
     "q": "Tu documentes ton travail ?",
     "a": "Oui, mais je n'écris pas un roman. Juste un readme clair, diagrammes quand nécessaire, Storybook pour les composants. Documentation utile, je n'aime pas la bureaucratie.",
-    "embedding": [0]
+    "embedding": [
+      0
+    ]
   },
   {
     "id": 17,
     "q": "Tu touches aussi au legacy ?",
     "a": "Oui. Je ne pleure pas devant du Java 8 ou du ColdFusion (j'ai vu pire, et j'ai survécu).",
-    "embedding": [0]
+    "embedding": [
+      0
+    ]
   },
   {
     "id": 18,
     "q": "Tu fais du mobile ?",
     "a": "Oui — Ionic et PWA, offline-first quand ça compte.",
-    "embedding": [0]
+    "embedding": [
+      0
+    ]
   },
   {
     "id": 19,
-    "q": "Tu utilises quoi pour la qualité et la DX ?",
-    "a": "linting strict, docs minimalistes, CI/CD obligatoire, monitoring",
-    "embedding": [0]
+    "q": "Tu utilises quoi pour la qualité et l'expérience développeur ?",
+    "a": "linting strict (Husky), docs minimalistes, CI/CD obligatoire, monitoring",
+    "embedding": [
+      0
+    ]
   },
   {
     "id": 20,
     "q": "Sécurité?",
     "a": "JWT, OAuth2, RBAC, bonnes pratiques OWASP.\nSécurité ≠ stress — sécurité = discipline.",
-    "embedding": [0]
+    "embedding": [
+      0
+    ]
   },
   {
     "id": 21,
     "q": "Tu préfères startup ou entreprise établie ?",
     "a": "Les deux, du moment que :\n\nil y a une vision claire\n\non ne confond pas vitesse et chaos\n\nles décisions se basent sur la réalité, pas l’ego",
-    "embedding": [0]
+    "embedding": [
+      0
+    ]
   },
   {
     "id": 22,
     "q": "Comment tu communiques ?",
     "a": "Directement, avec tact.\nSi quelque chose cloche, on en parle",
-    "embedding": [0]
+    "embedding": [
+      0
+    ]
   },
   {
     "id": 23,
     "q": "Comment tu gères la pression ?",
     "a": "Priorisation + calme.\nLe code écrit avec panique finit souvent par coûter une prime de stress... au futur toi.",
-    "embedding": [0]
+    "embedding": [
+      0
+    ]
   },
   {
     "id": 24,
     "q": "Team remote ou bureau ?",
     "a": "Flexible.\nLe livrable compte plus que la chaise où je suis assise.",
-    "embedding": [0]
+    "embedding": [
+      0
+    ]
   },
   {
     "id": 25,
     "q": "Ta mentalité ?",
     "a": "Construire, apprendre, améliorer.",
-    "embedding": [0]
+    "embedding": [
+      0
+    ]
   },
   {
     "id": 26,
     "q": "Dogme technique ?",
     "a": "Non. J’aime la technique, pas la secte.\nSi ça marche bien, c’est une bonne solution.",
-    "embedding": [0]
+    "embedding": [
+      0
+    ]
   },
   {
     "id": 27,
     "q": "Feedback ?",
     "a": "Constructif, régulier, humain.\nOn progresse tous mieux quand l’ego ne pilote pas.",
-    "embedding": [0]
+    "embedding": [
+      0
+    ]
   },
   {
     "id": 28,
-    "q": "Comment tu gère les problèmes?",
+    "q": "Comment tu gères les problèmes?",
     "a": "Priorisation + clair + résolu rapidement.\nQuand on a une idée, on la prend.",
-    "embedding": [0]
+    "embedding": [
+      0
+    ]
   },
   {
     "id": 29,
     "q": "Ta règle d’or ?",
-    "a": "Rendre le futur developpement plus facile qu’hier. S'améliorer continuellement.",
-    "embedding": [0]
+    "a": "S'améliorer continuellement.",
+    "embedding": [
+      0
+    ]
+  },
+  {
+    "id": 30,
+    "q": "Tu as des certifications ?",
+    "a": "Je privilégie l'expérience concrète et la pratique continue. Les certifications ont leur place, mais je valorise surtout les projets livrés et l'impact réel sur les produits.",
+    "embedding": [
+      0
+    ]
+  },
+  {
+    "id": 31,
+    "q": "Tu contribues à l'open source ?",
+    "a": "Oui, quand je peux. J'aime partager des solutions, améliorer des outils existants et apprendre de la communauté. C'est une excellente façon de progresser et de redonner.",
+    "embedding": [
+      0
+    ]
+  },
+  {
+    "id": 32,
+    "q": "Comment optimises-tu les performances ?",
+    "a": "Code splitting, lazy loading, optimisation des bundles, cache intelligent, CDN quand nécessaire.",
+    "embedding": [
+      0
+    ]
+  },
+  {
+    "id": 33,
+    "q": "Tu travailles en anglais ?",
+    "a": "Oui, sans problème. Documentation, communication d'équipe, code reviews — je suis à l'aise en français et en anglais.",
+    "embedding": [
+      0
+    ]
+  },
+  {
+    "id": 34,
+    "q": "Tu connais Agile/Scrum ?",
+    "a": "Oui, j'ai travaillé en Scrum, Kanban, et même en mode 'on improvise mais on livre'. L'important : itérations courtes, feedback régulier, adaptation.",
+    "embedding": [
+      0
+    ]
+  },
+  {
+    "id": 35,
+    "q": "Quels outils de monitoring utilises-tu ?",
+    "a": "Datadog ou App Insight pour les métriques, Lighthouse pour la performance web.",
+    "embedding": [
+      0
+    ]
+  },
+  {
+    "id": 36,
+    "q": "Tu as de l'expérience cloud ?",
+    "a": "Oui : Azure principalement, AWS occasionnellement. Déploiement, CI/CD, gestion d'environnements. Le cloud est un outil, pas une religion.",
+    "embedding": [
+      0
+    ]
+  },
+  {
+    "id": 37,
+    "q": "Quelles bases de données tu maîtrises ?",
+    "a": "PostgreSQL, MySQL, Redis pour le cache. Je sais modéliser, optimiser les requêtes et gérer les migrations sans casser la prod.",
+    "embedding": [
+      0
+    ]
+  },
+  {
+    "id": 38,
+    "q": "Tu utilises quels outils de collaboration ?",
+    "a": "Slack, Teams, Jira, Notion. L'outil importe peu, ce qui compte c'est la clarté de la communication et la fluidité du workflow.",
+    "embedding": [
+      0
+    ]
+  },
+  {
+    "id": 39,
+    "q": "Quel est ton objectif de carrière ?",
+    "a": "Continuer à construire des produits qui ont du sens, dans une équipe solide et bienveillante. Progresser techniquement, partager mes connaissances, et peut-être un jour encadrer d'autres devs.",
+    "embedding": [
+      0
+    ]
+  },
+  {
+    "id": 40,
+    "q": "Tu fais du mentorat ?",
+    "a": "Oui, j'aime partager. Expliquer, accompagner, débloquer un junior — c'est gratifiant et ça me force à rester pédagogue et claire dans mes explications.",
+    "embedding": [
+      0
+    ]
+  },
+  {
+    "id": 41,
+    "q": "Tu as déjà géré une équipe ?",
+    "a": "Pas formellement, mais j'ai souvent été référente technique, avec de l'onboarding, des code reviews et du support aux collègues. Leadership technique, pas hiérarchique.",
+    "embedding": [
+      0
+    ]
+  },
+  {
+    "id": 42,
+    "q": "Comment tu gères les dépendances obsolètes ?",
+    "a": "Mise à jour progressive, tests automatisés, et un œil sur les breaking changes. Je préfère des petites updates régulières qu'un big bang douloureux.",
+    "embedding": [
+      0
+    ]
+  },
+  {
+    "id": 43,
+    "q": "Tu as déjà travaillé en remote à 100% ?",
+    "a": "Oui. Organisation, rituels d'équipe clairs, outils de communication efficaces. Remote ne veut pas dire isolé; ça veut dire flexible et autonome.",
+    "embedding": [
+      0
+    ]
+  },
+  {
+    "id": 44,
+    "q": "Comment tu te tiens à jour techniquement ?",
+    "a": "Newsletters (JavaScript Weekly, Frontend Focus), projets persos, conférences en ligne, Discord/Slack de devs. La veille fait partie du métier.",
+    "embedding": [
+      0
+    ]
   }
 ]
