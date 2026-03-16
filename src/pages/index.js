@@ -35,7 +35,7 @@ function HomepageHeader() {
         </Heading>
         <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <Box m="auto">
-            <Avatar alt={siteConfig.title} src={useBaseUrl('https://media.licdn.com/dms/image/C4D03AQF55Cc_jwULMQ/profile-displayphoto-shrink_200_200/0/1611691108939?e=2147483647&v=beta&t=mxVG9boqUXHCdih2ZAQEN_xRcOhKWiOfq_hRiOMp5JY')} sx={{ width: 150, height: 150, m: 2 }} />
+            <Avatar alt={siteConfig.title} src={useBaseUrl('https://media.licdn.com/dms/image/v2/C4D03AQF55Cc_jwULMQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1611691108939?e=2147483647&v=beta&t=TCPS3kQlSFpRj6Oz3MZSveAqm9RMAqsJclR6FQMWkL8')} sx={{ width: 150, height: 150, m: 2 }} />
           </Box>
         </Box>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
