@@ -30,8 +30,8 @@ const resumeStyles = makeStyles(() =>
       width: '100%',
     },
     imgContainer: {
-      height: 56,
-      width: 56,
+      height: 75,
+      width: 75,
       float: 'left',
       position: 'relative',
     },
@@ -84,11 +84,11 @@ const resumeStyles = makeStyles(() =>
   }),
 );
 
-export const TackStacks = ({ stack }) => {
+export const TackStacks = ({ stack, color }) => {
   return (
     <>
       {stack.map((item, index) => (
-        <Chip key={index} label={item} color="secondary" style={{ marginRight: 5, marginTop: 5 }} />
+        <Chip key={index} label={item} color={color || "secondary"} style={{ marginRight: 5, marginTop: 5 }} />
       ))}
     </>
   )
@@ -108,7 +108,7 @@ export const Project = (props) => {
           <a href={html_url} target='_blank' style={{ marginLeft: '-.7rem', marginRight: '.7rem', padding: '.5rem .7rem'}}>Code</a>
           { homepage && <a href={homepage} target='_blank' style={{ marginLeft: '.7rem', marginRight: '.7rem', padding: '.5rem.7rem'}}>Site</a> }
         </div>
-        { topics && <TackStacks stack={topics} />} {language && <>{language}</>}
+        { topics && <TackStacks stack={topics} />} {language && <TackStacks stack={[language]} color="primary" />}
       </div>
     </section>
   )
