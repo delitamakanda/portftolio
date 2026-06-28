@@ -2,18 +2,24 @@ const calculateWorkLength = (startMonth, endMonth) => {
     let months = (new Date(endMonth).getFullYear() - new Date(startMonth).getFullYear()) * 12;
     months -= new Date(startMonth).getMonth() + 1;
     months += new Date(endMonth).getMonth()
+    // si plus de 12 mois, on affiche le nombre d'années et de mois
+    if (months >= 12) {
+        const years = Math.floor(months / 12);
+        const remainingMonths = months % 12;
+        return `${years} an${years > 1 ? 's' : ''} et ${remainingMonths}`;
+    }
     return months <= 0? 0 : months;
 };
 
 const EXPERIENCES = [
     {
         id: '1',
-        img: 'https://www.axivit.com/wp-content/uploads/2025/05/logo-axiv-it-ligne-couleur.png',
+        img: 'https://media.licdn.com/dms/image/v2/C4E0BAQGUhUhx65EoAw/company-logo_200_200/company-logo_200_200/0/1630621054198/axiv_it_group_logo?e=2147483647&v=beta&t=QA8-zF4fJ1EGRa0Yv7tz30_22jbM48CSHBRuQ8QtZe8',
         title: 'Développeuse front-end',
         company: 'AXIV IT GROUP',
         location: 'Guyancourt / Boulogne - Billancourt',
-        dates: 'juil. 2017 - Present',
-        workLength: '',
+        dates: 'juil. 2017 - Mars 2026',
+        workLength: `${calculateWorkLength(new Date(2017, 6, 1), new Date(2026, 2, 31))} mois`,
         tasks: [
             'Développement full-stack (ColdFusion, jQuery, Vue.js, Angular) et mobile (Ionic)',
 'Développement d’APIs REST et de webservices',
@@ -32,19 +38,21 @@ const EXPERIENCES = [
     },
     {
         id: '2',
-        img: 'https://www.axivit.com/wp-content/uploads/2025/05/logo-axiv-it-ligne-couleur.png',
+        img: 'https://media.licdn.com/dms/image/v2/C4E0BAQGUhUhx65EoAw/company-logo_200_200/company-logo_200_200/0/1630621054198/axiv_it_group_logo?e=2147483647&v=beta&t=QA8-zF4fJ1EGRa0Yv7tz30_22jbM48CSHBRuQ8QtZe8',
         title: 'Développeuse front-end',
         company: 'AXIV IT GROUP',
         location: 'Guyancourt / Boulogne - Billancourt',
-        dates: 'nov. 2016 - Present',
+        dates: `${calculateWorkLength(new Date(2016, 10, 1), new Date())} mois`,
         workLength: '',
         tasks: [
-            ' Intégration de maquettes en HTML/CSS',
+            'Intégration de maquettes en HTML/CSS',
             'Mise en place d’outils CSS et d’une liste de variables pour faciliter la reprise d\' un projet',
             'Tests de compatibilité navigateurs',
             'Développement front jQuery',
+            'Développement backend en coldfusion',
+            'Maintenance évolutive et support applicatif sur les applications existantes',
         ],
-        skills: ['SCSS', 'Git', 'Gulp', 'HTML/CSS', 'jQuery', 'Magento']
+        skills: ['SCSS', 'Git', 'Gulp', 'HTML/CSS', 'jQuery', 'Magento', 'fw1', 'Coldfusion', 'SQL', 'Mantis']
     },
     {
         id: '3',
@@ -63,7 +71,7 @@ const EXPERIENCES = [
     },
     {
         id: '4',
-        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMmAPg2haHueZ8hMGzC_183KsJnn1pEzKEtg&s',
+        img: 'https://media.licdn.com/dms/image/v2/D4D0BAQGhrWV7ygFFcg/company-logo_200_200/B4DZecbP2NH4AI-/0/1750676078500/emagine_logo?e=2147483647&v=beta&t=V3Bw3T2LonRqcACRfvf-J3zqVcII4iNhqMkHab5qX0U',
         title: 'Développeuse front-end',
         company: 'emagine Consulting France',
         location: 'Nanterre',
@@ -98,14 +106,17 @@ const EXPERIENCES = [
         title: 'Intégratrice web',
         company: 'Europharma',
         location: 'Issy - les - moulineaux',
-        dates: 'janv. 2010 - mai 2015',
-        workLength: '',
+        dates: `janv. 2010 - mai 2015`,
+        workLength: `${calculateWorkLength(new Date(2010, 0, 1), new Date(2015, 4, 31))} mois`,
         tasks: [
 'Intégration et mise en page de formations e-learning destinées aux laboratoires pharmaceutiques',
         ],
         skills: ['html/css', 'scss', 'php', 'Flash', 'jQuery', 'dojo', 'mootools']
     }
 ]
+// experience id 2 must be on top of the list
+EXPERIENCES[1] = EXPERIENCES.splice(0, 1, EXPERIENCES[1])[0];
+
 
 const EDUCATION = [
     {
