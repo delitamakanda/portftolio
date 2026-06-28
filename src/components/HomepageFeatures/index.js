@@ -7,6 +7,20 @@ import { Chip, CircularProgress } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import FaqAgent from "../FaqAgent";
+import {
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemAvatar,
+  ListItemText,
+  Avatar,
+  Box,
+  Typography,
+  IconButton,
+  Tooltip,
+} from '@mui/material';
+import StarIcon from '@mui/icons-material/Star';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 const resumeStyles = makeStyles(() => ({
     title: {
@@ -94,22 +108,103 @@ export const TackStacks = ({ stack, color }) => {
 }
 
 export const Project = (props) => {
-  const { topics, name, description, html_url, homepage, language } = props;
+  const { id, stargazers_count, owner, name, description, html_url, language } = props;
+  const getLanguageColor = (language) => {
+     const colors = {
+      'JavaScript': '#f1e05a',
+      'TypeScript': '#2b7489',
+      'Python': '#3572A5',
+      'Java': '#b07219',
+      'C++': '#f34b7d',
+      'C#': '#178600',
+      'PHP': '#4F5D95',
+      'Ruby': '#701516',
+      'Go': '#00ADD8',
+      'Swift': '#ffac45',
+      'Kotlin': '#F18E33',
+      'Rust': '#dea584',
+      'Dart': '#00B4AB',
+      'Vue': '#2c3e50',
+      'HTML': '#e34c26',
+      'CSS': '#563d7c',
+      'Shell': '#89e051',
+      'Objective-C': '#438eff',
+      'Scala': '#c22d40',
+      'Perl': '#0298c3',
+      'Haskell': '#5e5086',
+      'Lua': '#000080',
+      'R': '#198CE7',
+      'Elixir': '#6e4a7e',
+      'Clojure': '#db5855',
+      'Erlang': '#B83998',
+      'F#': '#b845fc',
+      'Groovy': '#e69f56',
+      'PowerShell': '#012456',
+    };
+    return colors[language] || '#ededed';
+  }
+  const formatStars = (stars) => {
+    if (stars >= 1000) {
+      return (stars / 1000).toFixed(1) + 'k';
+    }
+    return stars;
+  }
   return (
-    <section style={{ flexDirection: 'row', margin: 20, marginLeft: 0, display: 'flex'}}>
+    <ListItem disablePadding key={id} secondaryAction={
+      <Box sx={{ display: 'flex', gap: 1, alignItems: 'center' }}>
+        <Tooltip title="Stars">
+          <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
+            <StarIcon sx={{ fontSize: 18, color: '#fbbf24' }} />
+            <Typography variant="body2" sx={{ fontWeight: 600 }}>
+              {formatStars(stargazers_count)}
+            </Typography>
+          </Box>
+        </Tooltip>
+        <Tooltip title="Open on GitHub">
+          <IconButton
+            edge="end"
+            aria-label="open"
+            href={html_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            size="small"
+          >
+            <OpenInNewIcon fontSize="small" />
+          </IconButton>
+        </Tooltip>
+      </Box>
+    }>
     
-      <div style={{ flex: '2 1'}}>
-        <div style={{ display: 'flex', flexDirection: 'row'}}>
-          <span style={{ flex: '2 0', fontWeight: 800, fontSize: 18 }}>{name}</span>
-        </div>
-        <span style={{ fontSize: 14}}>{description}</span>
-        <div style={{ display: 'flex'}}>
-          <a href={html_url} target='_blank' style={{ marginLeft: '-.7rem', marginRight: '.7rem', padding: '.5rem .7rem'}}>Code</a>
-          { homepage && <a href={homepage} target='_blank' style={{ marginLeft: '.7rem', marginRight: '.7rem', padding: '.5rem.7rem'}}>Site</a> }
-        </div>
-        { topics && <TackStacks stack={topics} />} {language && <TackStacks stack={[language]} color="primary" />}
-      </div>
-    </section>
+      <ListItemButton component="a" href={html_url} target="_blank" rel="noopener noreferrer" sx={{
+        '&:hover': {
+          bgcolor: 'action.hover',
+        }
+      }}>
+        <ListItemAvatar>
+          <Avatar alt={owner['login']} src={owner['avatar_url']} sx={{ width: 40, height: 40 }} />
+        </ListItemAvatar>
+        <ListItemText primary={
+          <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+            <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>
+              {name}
+            </Typography>
+            {language && (
+        <Chip label={language} size="small" sx={{ bgcolor: getLanguageColor(language), color: '#fff', fontSize: 12, fontWeight: 600 }} />
+        )}
+          </Box>
+        } secondary={
+          <Box>
+            <Typography component="span" variant="body2" color="text.primary" sx={{ display: 'block', mt: 0.5 }}>
+              {description}
+            </Typography>
+            <Typography component="span" variant="caption" color="text.secondary" sx={{ display: 'block', mt: 0.5 }}>
+              par {owner['login']}
+            </Typography>
+          </Box>
+        }
+        />
+        </ListItemButton>
+    </ListItem>
   )
 }
 
@@ -170,7 +265,9 @@ export const MainTabs = () => {
         <h2>Projets</h2>
         {isLoading && <CircularProgress color='secondary' />}
         {!isLoading && repos && repos.map((item) => (
-          <Project  key={item.id.toString()} {...item} />
+          <List sx={{ width: '100%', bgcolor: 'background.paper'}} key={item.id.toString()}>
+            <Project {...item} />
+          </List>
         ))}
       </TabItem>
       <TabItem key="'resume'" value="CURRICULUM VITAE" to='/resume' >

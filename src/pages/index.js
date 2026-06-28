@@ -6,10 +6,6 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import ProfileCard from '@site/src/components/ProfileCard';
 
-
-import { Avatar, Box } from '@mui/material';
-
-import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
 const profileDetails = {
