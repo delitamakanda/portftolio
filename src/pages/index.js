@@ -4,7 +4,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import Socials from '@site/src/components/Socials';
+import ProfileCard from '@site/src/components/ProfileCard';
 
 
 import { Avatar, Box } from '@mui/material';
@@ -12,40 +12,14 @@ import { Avatar, Box } from '@mui/material';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
-const socialDetails = [
-  {
-    name: 'Github',
-    url: 'https://github.com/delitamakanda',
-    icon: 'github'
-  },
-  {
-    name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/delitamakanda/',
-    icon: 'linkedin'
-  }
-];
+const profileDetails = {
+  name: 'Delita Makanda',
+  githubUrl: 'https://github.com/delitamakanda',
+  linkedinUrl: 'https://www.linkedin.com/in/delitamakanda/',
+  jobTitle: 'Développeuse Angular senior',
+  photoUrl: 'https://media.licdn.com/dms/image/v2/C4D03AQF55Cc_jwULMQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1611691108939?e=2147483647&v=beta&t=TCPS3kQlSFpRj6Oz3MZSveAqm9RMAqsJclR6FQMWkL8'
+};
 
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <Box m="auto">
-            <Avatar alt={siteConfig.title} src={useBaseUrl('https://media.licdn.com/dms/image/v2/C4D03AQF55Cc_jwULMQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1611691108939?e=2147483647&v=beta&t=TCPS3kQlSFpRj6Oz3MZSveAqm9RMAqsJclR6FQMWkL8')} sx={{ width: 150, height: 150, m: 2 }} />
-          </Box>
-        </Box>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        {socialDetails && socialDetails.map((social, index) => (
-          <Socials key={index} {...social} />
-        ))}
-      </div>
-    </header>
-  );
-}
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
@@ -53,7 +27,7 @@ export default function Home() {
     <Layout
       title="Home"
       description={`Blog of ${siteConfig.title}`}>
-      <HomepageHeader />
+      <ProfileCard {...profileDetails} />
       <main>
         <HomepageFeatures />
       </main>
