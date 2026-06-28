@@ -59,9 +59,6 @@ export default function FaqAgent() {
 
     return (<Box
       sx={{
-        background: isDark
-          ? 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)'
-          : 'linear-gradient(135deg, #f8f7f4 0%, #ede9e0 100%)',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
