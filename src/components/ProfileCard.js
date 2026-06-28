@@ -24,7 +24,7 @@ export default function ProfileCard(props) {
                 justifyContent: 'center',
                 alignItems: 'center',
                 minHeight: '100vh',
-                background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
+                background: colorMode === 'dark' ? 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)' : 'linear-gradient(135deg, #f5f7fa, #c3cfe2)',
                 padding: 2,
             }}
         >

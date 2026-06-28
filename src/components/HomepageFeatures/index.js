@@ -21,6 +21,7 @@ import {
 } from '@mui/material';
 import StarIcon from '@mui/icons-material/Star';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import { useColorMode } from '@docusaurus/theme-common';
 
 const resumeStyles = makeStyles(() => ({
     title: {
@@ -241,6 +242,7 @@ export const MainTabs = () => {
   const [isLoading, setIsLoading] = useState(false);
   const classes = resumeStyles();
   const { siteConfig } = useDocusaurusContext();
+  const { colorMode } = useColorMode();
 
   useEffect(() => {
     setIsLoading(true);
@@ -265,7 +267,7 @@ export const MainTabs = () => {
         <h2>Projets</h2>
         {isLoading && <CircularProgress color='secondary' />}
         {!isLoading && repos && repos.map((item) => (
-          <List sx={{ width: '100%', bgcolor: 'background.paper'}} key={item.id.toString()}>
+          <List sx={{ width: '100%', bgcolor: colorMode === 'dark' ? 'background.default' : 'background.paper'}} key={item.id.toString()}>
             <Project {...item} />
           </List>
         ))}
