@@ -10,70 +10,9 @@ import {
 import SchoolIcon from '@mui/icons-material/School';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 import { useColorMode } from '@docusaurus/theme-common';
-const resumeStyles = makeStyles(() => ({
-    container: {
-      display: 'flex',
-      width: '100%',
-      justifyContent: 'space-between',
-      margin: 15,
-    },
-    content: {
-      flexDirection: 'column',
-      display: 'flex',
-      width: '100%',
-    },
-    fullWidth: {
-      width: '100%',
-    },
-    imgContainer: {
-      height: 75,
-      width: 75,
-      float: 'left',
-      position: 'relative',
-    },
-    img: {
-      width: 'auto',
-      height: 'auto',
-      maxWidth: '100%',
-      maxHeight: '100%',
-      position: 'absolute',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
-      boxSizing: 'border-box',
-      backgroundClip: 'content-box',
-        border: '4px solid transparent',
-        borderRadius: '6px',
-    },
-    companyContainer: {
-        flex: '1 0',
-        width: 'auto',
-        marginLeft: '80px',
-        overflow: 'hidden',
-        marginBottom: 8,
-    },
-    jobTitle: {
-      fontSize: 16,
-      fontWeight: 600,
-      marginBottom: 0,
-      marginTop: 0,
-    },
-    company: {
-        display: 'inline',
-        fontSize: 13,
-    },
-    flex: {
-        display: 'flex',
-    },
-    date: {
-        fontSize: 13,
-        marginLeft: 10,
-    },
-}));
 
 export default function FormationItem({ img, school, study, dates }) {
   const [imageError, setImageError] = useState(false);
-  const classes = resumeStyles();
   const handleImageError = (e) => {
     setImageError(true);
   };
