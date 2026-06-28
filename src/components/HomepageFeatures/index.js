@@ -337,7 +337,7 @@ export default function HomepageFeatures() {
     <section className={styles.features}>
       <div className="container">
         <div className="row">
-          <div className='col col--offset-4 col--8'>
+          <div className='col col--12'>
             <MainTabs />
           </div>
         </div>
