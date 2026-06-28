@@ -22,6 +22,8 @@ import {
 import StarIcon from '@mui/icons-material/Star';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import { useColorMode } from '@docusaurus/theme-common';
+import FormationList from '../Formation/FormationList';
+import ExperienceList from '../Experience/ExperienceList';
 
 const resumeStyles = makeStyles(() => ({
     title: {
@@ -209,40 +211,20 @@ export const Project = (props) => {
   )
 }
 
-export const Education = (props) => {
-  const { img, school, study, dates } = props;
-  const classes = resumeStyles();
-  
-  return (
-    <section>
-      <div className={classes.container}>
-          <div className={classes.content}>
-            <div className={classes.fullWidth}>
-          <div className={classes.imgContainer}>
-            {img && <img src={img} alt={school} className={classes.img} />}
-          </div>
-          <div className={classes.companyContainer}>
-            <h3 className={classes.jobTitle}>{school}</h3>
-            <span className={classes.company}>{study}</span>
-            <div className={classes.flex}>
-              <h4 className={classes.date}>
-                <span>{ dates }</span>
-              </h4>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  )
-}
-
 export const MainTabs = () => {
   const [repos, setRepos] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const classes = resumeStyles();
   const { siteConfig } = useDocusaurusContext();
   const { colorMode } = useColorMode();
+  const theme = {
+    palette: {
+      text: {
+        primary: colorMode === 'dark' ? '#fff' : '#000',
+        secondary: colorMode === 'dark' ? '#aaa' : '#555',
+      },
+    },
+  };
 
   useEffect(() => {
     setIsLoading(true);
@@ -274,56 +256,30 @@ export const MainTabs = () => {
       </TabItem>
       <TabItem key="'resume'" value="CURRICULUM VITAE" to='/resume' >
         <h2>Curriculum vitae</h2>
-        {EXPERIENCES.map(({title, company, location, dates, workLength, tasks, img, skills}, idx) => (
-          <div key={idx} className={styles.experience}>
-            <section>
-      <div className={classes.container}>
-          <div className={classes.content}>
-            <div className={classes.fullWidth}>
-          <div className={classes.imgContainer}>
-            {img && <img src={img} alt={title} className={classes.img} />}
-          </div>
-          <div className={classes.companyContainer}>
-            <h3 className={classes.jobTitle}>{title}</h3>
-            <span className={classes.company}>{company}</span>
-            <div className={classes.flex}>
-              <h4 className={classes.date}>
-                <span>{dates} {workLength && (
-                  <>
-                  •
-                  </>
-                )}</span>
-              </h4>
-              <h4 className={classes.date}>
-                <span>{ workLength }</span>
-              </h4>
-            </div>
-            <div style={{ display: 'block', fontSize: 10}}>
-              <span>{location}</span>
-            </div>
-          </div>
-          </div>
-          <div className={classes.city}>
-            <p className={classes.information}>
-              {tasks && tasks.map((task, idx) => {
-                return (
-                  <span key={idx}>
-                    • {task} <br />
-                  </span>
-                )
-              })}
-            </p>
-        {skills && <TackStacks stack={skills} />}
-          </div>
-        </div>
-      </div>
-    </section>
-          </div>
-        ))}
 
-        {EDUCATION.map((item) => (
-          <Education key={item.id.toString()} {...item}  />
-        ))}
+        <Box sx={{ borderBottom: `1px solid ${colorMode === 'dark' ? '#333' : '#e5e5e5'}`, marginBottom: '40px' }}>
+          <Tabs
+            sx={{
+              '& .MuiTab-root': {
+                textTransform: 'none',
+                fontSize: '1rem',
+                fontWeight: 500,
+                color: colorMode === 'dark' ? theme.palette.text.secondary : theme.palette.text.primary,
+                '&.Mui-selected': {
+                  color: '#1976d2'
+                }
+              }
+            }}
+          >
+            <TabItem value="Expériences" key="expériences" to="/experiences">
+              <ExperienceList jobs={EXPERIENCES} />
+            </TabItem>
+            <TabItem value="Formations" key="formations" to="/formations">
+              <FormationList items={EDUCATION}  />
+            </TabItem>
+          </Tabs>
+        </Box>
+
       </TabItem>
         <TabItem key="'faq'" value="FAQ" to='/faq'>
         <FaqAgent />
