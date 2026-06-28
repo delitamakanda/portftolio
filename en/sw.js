@@ -608,7 +608,7 @@ function waitUntil(event, asyncFn) {
 
 // @ts-ignore
 try {
-    self['workbox:core:7.2.0'] && _();
+    self['workbox:core:7.4.0'] && _();
 }
 catch (e) { }
 
@@ -1783,7 +1783,7 @@ __webpack_require__.r(__webpack_exports__);
 
 // @ts-ignore
 try {
-    self['workbox:precaching:7.2.0'] && _();
+    self['workbox:precaching:7.4.0'] && _();
 }
 catch (e) { }
 
@@ -3334,7 +3334,7 @@ class Router {
 
 // @ts-ignore
 try {
-    self['workbox:routing:7.2.0'] && _();
+    self['workbox:routing:7.4.0'] && _();
 }
 catch (e) { }
 
@@ -3893,7 +3893,7 @@ function toRequest(input) {
     return typeof input === 'string' ? new Request(input) : input;
 }
 /**
- * A class created every time a Strategy instance instance calls
+ * A class created every time a Strategy instance calls
  * {@link workbox-strategies.Strategy~handle} or
  * {@link workbox-strategies.Strategy~handleAll} that wraps all fetch and
  * cache actions around plugin callbacks and keeps track of when the strategy
@@ -4303,7 +4303,7 @@ class StrategyHandler {
     /**
      * Adds a promise to the
      * [extend lifetime promises]{@link https://w3c.github.io/ServiceWorker/#extendableevent-extend-lifetime-promises}
-     * of the event event associated with the request being handled (usually a
+     * of the event associated with the request being handled (usually a
      * `FetchEvent`).
      *
      * Note: you can await
@@ -4324,13 +4324,17 @@ class StrategyHandler {
      *
      * Note: any work done after `doneWaiting()` settles should be manually
      * passed to an event's `waitUntil()` method (not this handler's
-     * `waitUntil()` method), otherwise the service worker thread my be killed
+     * `waitUntil()` method), otherwise the service worker thread may be killed
      * prior to your work completing.
      */
     async doneWaiting() {
-        let promise;
-        while ((promise = this._extendLifetimePromises.shift())) {
-            await promise;
+        while (this._extendLifetimePromises.length) {
+            const promises = this._extendLifetimePromises.splice(0);
+            const result = await Promise.allSettled(promises);
+            const firstRejection = result.find((i) => i.status === 'rejected');
+            if (firstRejection) {
+                throw firstRejection.reason;
+            }
         }
     }
     /**
@@ -4403,7 +4407,7 @@ class StrategyHandler {
 
 // @ts-ignore
 try {
-    self['workbox:strategies:7.2.0'] && _();
+    self['workbox:strategies:7.4.0'] && _();
 }
 catch (e) { }
 
@@ -4564,7 +4568,7 @@ function getPossibleURLs(url) {
 (async () => {
     const params = parseSwParams();
     // eslint-disable-next-line no-underscore-dangle
-    const precacheManifest = [{"revision":"0b59a41fa8e32dcf29f81997285b32ed","url":"404.html"},{"revision":"ed4da00dff05da83b335314ea09317f0","url":"assets/css/styles.1e05df91.css"},{"revision":"94d5de39d907e0ad277c7430c92d452e","url":"assets/js/1f391b9e.8f415c49.js"},{"revision":"d8c488e3adfe4a5d40e28f6cf1307ea6","url":"assets/js/334.b025da27.js"},{"revision":"c395a4214c1348cd536167cac591de58","url":"assets/js/362.ca819720.js"},{"revision":"dc91d9b513dd3a9ed573acd0c7174b52","url":"assets/js/393be207.2e1ac8f1.js"},{"revision":"c56710d49a416bd3fc9788b437883bbc","url":"assets/js/436.1f662ebc.js"},{"revision":"5a69688293602a6001470e3c404de5fe","url":"assets/js/730.fb3dc668.js"},{"revision":"fd7bdab47a075694e55faab26ec21585","url":"assets/js/764.a7d58f1d.js"},{"revision":"af8f92e0e18031a9b83196666cde8f21","url":"assets/js/780.b300ca98.js"},{"revision":"917a9e105cc39668c531ea984a99c867","url":"assets/js/a7456010.98b5a67b.js"},{"revision":"dcabe7f7ecd68c070c3b59910e9e88a1","url":"assets/js/c4f5d8e4.7ced1c64.js"},{"revision":"caa65825bbfcab066f1ca917c440382e","url":"assets/js/main.4c1f0bc6.js"},{"revision":"3ff68a31a4603475b31a46d6440d88bf","url":"assets/js/runtime~main.396e0120.js"},{"revision":"edf192745fa93e2af9be55d35b33670c","url":"faq_index.json"},{"revision":"10e267bd9a70f7fe9de9b113b08a9c16","url":"faq.json"},{"revision":"19398386e4849abaf068b9fffb6538bf","url":"index.html"},{"revision":"97c9f5e80efa01fc31fa2d401862f7c7","url":"manifest.json"},{"revision":"3364272850c27c254213016c0a5b9b0a","url":"markdown-page/index.html"},{"revision":"000de4a48405bd21b7eec1abc07ede6c","url":"img/docusaurus-social-card.jpg"},{"revision":"7fa1a026116afe175cae818030d4ffc4","url":"img/docusaurus.png"},{"revision":"4343e07bf942aefb5f334501958fbc0e","url":"img/favicon.ico"},{"revision":"aa4fa2cdc39d33f2ee3b8f245b6d30d9","url":"img/logo.svg"},{"revision":"a6b83d7b4c3cf36cb21eb7a9721716dd","url":"img/undraw_docusaurus_mountain.svg"},{"revision":"b64ae8e3c10e5ff2ec85a653cfe6edf8","url":"img/undraw_docusaurus_react.svg"},{"revision":"8fa6e79a15c385d7b2dc4bb761a2e9e3","url":"img/undraw_docusaurus_tree.svg"}];
+    const precacheManifest = [{"revision":"97c9f5e80efa01fc31fa2d401862f7c7","url":"manifest.json"},{"revision":"a8480c040e0f715dd201e4e9c44beed2","url":"index.html"},{"revision":"edf192745fa93e2af9be55d35b33670c","url":"faq_index.json"},{"revision":"10e267bd9a70f7fe9de9b113b08a9c16","url":"faq.json"},{"revision":"df783b2d8acc48c11a1ec01604c4affa","url":"404.html"},{"revision":"3a3f54c53e134c53a24675c5b01ad4c3","url":"markdown-page/index.html"},{"revision":"7ecd780feade59411402132779e204d6","url":"assets/js/runtime~main.4c8daf41.js"},{"revision":"caa65825bbfcab066f1ca917c440382e","url":"assets/js/main.4c1f0bc6.js"},{"revision":"dcabe7f7ecd68c070c3b59910e9e88a1","url":"assets/js/c4f5d8e4.7ced1c64.js"},{"revision":"917a9e105cc39668c531ea984a99c867","url":"assets/js/a7456010.98b5a67b.js"},{"revision":"af8f92e0e18031a9b83196666cde8f21","url":"assets/js/780.b300ca98.js"},{"revision":"fd7bdab47a075694e55faab26ec21585","url":"assets/js/764.a7d58f1d.js"},{"revision":"f6c484ef53a286566b31994c6297b447","url":"assets/js/730.7cda9558.js"},{"revision":"c56710d49a416bd3fc9788b437883bbc","url":"assets/js/436.1f662ebc.js"},{"revision":"dc91d9b513dd3a9ed573acd0c7174b52","url":"assets/js/393be207.2e1ac8f1.js"},{"revision":"c395a4214c1348cd536167cac591de58","url":"assets/js/362.ca819720.js"},{"revision":"d8c488e3adfe4a5d40e28f6cf1307ea6","url":"assets/js/334.b025da27.js"},{"revision":"94d5de39d907e0ad277c7430c92d452e","url":"assets/js/1f391b9e.8f415c49.js"},{"revision":"ed4da00dff05da83b335314ea09317f0","url":"assets/css/styles.1e05df91.css"},{"revision":"8fa6e79a15c385d7b2dc4bb761a2e9e3","url":"img/undraw_docusaurus_tree.svg"},{"revision":"b64ae8e3c10e5ff2ec85a653cfe6edf8","url":"img/undraw_docusaurus_react.svg"},{"revision":"a6b83d7b4c3cf36cb21eb7a9721716dd","url":"img/undraw_docusaurus_mountain.svg"},{"revision":"aa4fa2cdc39d33f2ee3b8f245b6d30d9","url":"img/logo.svg"},{"revision":"4343e07bf942aefb5f334501958fbc0e","url":"img/favicon.ico"},{"revision":"7fa1a026116afe175cae818030d4ffc4","url":"img/docusaurus.png"},{"revision":"000de4a48405bd21b7eec1abc07ede6c","url":"img/docusaurus-social-card.jpg"}];
     const controller = new workbox_precaching__WEBPACK_IMPORTED_MODULE_0__.PrecacheController({
         // Safer to turn this true?
         fallbackToNetwork: true,
