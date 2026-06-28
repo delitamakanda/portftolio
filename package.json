@@ -15,6 +15,16 @@
     "build:index": "node scripts/build-index.mjs",
     "prepare": "husky"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npx lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,css,scss,md,mdx}": [
+      "prettier --write"
+    ]
+  },
   "dependencies": {
     "@docusaurus/core": "^3.10.1",
     "@docusaurus/plugin-google-gtag": "^3.10.1",
@@ -35,7 +45,9 @@
     "@docusaurus/module-type-aliases": "^3.10.1",
     "@docusaurus/types": "^3.10.1",
     "dotenv": "^17.4.2",
-    "husky": "^9.1.7"
+    "husky": "^9.1.7",
+    "lint-staged": "^17.0.8",
+    "prettier": "^3.9.1"
   },
   "browserslist": {
     "production": [
