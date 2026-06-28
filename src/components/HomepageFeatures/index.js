@@ -4,12 +4,11 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import { EXPERIENCES, EDUCATION } from '../../utils/data';
 import { Chip, CircularProgress } from '@mui/material';
-import { makeStyles, createStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@mui/styles';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import FaqAgent from "../FaqAgent";
 
-const resumeStyles = makeStyles(() =>
-  createStyles({
+const resumeStyles = makeStyles(() => ({
     title: {
       fontWeight: 700,
       fontSize: '2rem',
