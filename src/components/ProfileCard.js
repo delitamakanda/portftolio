@@ -135,9 +135,9 @@ export default function ProfileCard(props) {
                         backgroundColor: '#1a1a2e',
                         transform: 'translateY(-4px)',
                         fontSize: 30, 
-                        color: '#fff': '#000',
+                        color: '#fff',
                           '&:hover': {
-                            color: '#fff': '#000'
+                            color: '#fff'
                           }
                         },
                     }}
