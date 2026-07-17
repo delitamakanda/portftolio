@@ -125,7 +125,7 @@ const EXPERIENCES = [
     }
 ]
 // experience id 2 must be on top of the list
-EXPERIENCES[1] = EXPERIENCES.splice(0, 1, EXPERIENCES[1])[0];
+// EXPERIENCES[1] = EXPERIENCES.splice(0, 1, EXPERIENCES[1])[0];
 
 
 const EDUCATION = [
