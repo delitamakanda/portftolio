@@ -14,6 +14,16 @@ const calculateWorkLength = (startMonth, endMonth) => {
 const EXPERIENCES = [
     {
         id: '1',
+        img: 'https://media.licdn.com/dms/image/v2/C4E0BAQFdSPFzWWPyEA/company-logo_200_200/company-logo_200_200/0/1630594613647/davidson_consulting_logo?e=2147483647&v=beta&t=7P3STQtrOplrT5iNw-Qxh7cuy0k4I1YmC7kjukBDms0',
+        title 'Consultante Développeur Angular .NET',
+        company: 'Davidson Consulting',
+        location: 'Guyancourt / Boulogne - Billancourt',
+        dates: 'depuis juil. 2017',
+        workLength: `${calculateWorkLength(new Date(2026, 7, 15), new Date())} mois`,
+        tasks: []
+    },
+    {
+        id: '2',
         img: 'https://media.licdn.com/dms/image/v2/C4E0BAQGUhUhx65EoAw/company-logo_200_200/company-logo_200_200/0/1630621054198/axiv_it_group_logo?e=2147483647&v=beta&t=QA8-zF4fJ1EGRa0Yv7tz30_22jbM48CSHBRuQ8QtZe8',
         title: 'Développeuse front-end',
         company: 'AXIV IT GROUP',
@@ -37,7 +47,7 @@ const EXPERIENCES = [
         skills: ['SCSS', 'Git', 'Gulp', 'HTML/CSS', 'jQuery', 'SQL', 'Cordova','Coldfusion', 'Angular', 'C#', 'Ionic', 'Vue.js', 'Azure Devops']
     },
     {
-        id: '2',
+        id: '3',
         img: 'https://media.licdn.com/dms/image/v2/C4E0BAQGUhUhx65EoAw/company-logo_200_200/company-logo_200_200/0/1630621054198/axiv_it_group_logo?e=2147483647&v=beta&t=QA8-zF4fJ1EGRa0Yv7tz30_22jbM48CSHBRuQ8QtZe8',
         title: 'Développeuse front-end',
         company: 'AXIV IT GROUP',
@@ -55,7 +65,7 @@ const EXPERIENCES = [
         skills: ['SCSS', 'Git', 'Gulp', 'HTML/CSS', 'jQuery', 'Magento', 'fw1', 'Coldfusion', 'SQL', 'Mantis']
     },
     {
-        id: '3',
+        id: '4',
         img: 'https://lestetesdepub.com/wp-content/uploads/2020/03/Group-47.png',
         title: 'Développeuse front-end',
         company: 'Lafinbox',
@@ -70,7 +80,7 @@ const EXPERIENCES = [
         skills: ['React.JS', 'SCSS', 'Git', 'Cordova', 'Python', 'Gulp', 'Flux']
     },
     {
-        id: '4',
+        id: '5',
         img: 'https://media.licdn.com/dms/image/v2/D4D0BAQGhrWV7ygFFcg/company-logo_200_200/B4DZecbP2NH4AI-/0/1750676078500/emagine_logo?e=2147483647&v=beta&t=V3Bw3T2LonRqcACRfvf-J3zqVcII4iNhqMkHab5qX0U',
         title: 'Développeuse front-end',
         company: 'emagine Consulting France',
@@ -86,7 +96,7 @@ const EXPERIENCES = [
         skills: ['jQuery', 'AngularJS', 'Git', 'Grunt', 'jQueryUI']
     },
     {
-        id: '5',
+        id: '6',
         img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSvtWAwrLQtIuhuo0Ygh6ZiDdw4HaOeJXpJA&s',
         title: 'Développeuse front-end',
         company: 'Neolynk',
@@ -101,7 +111,7 @@ const EXPERIENCES = [
         skills: ['jQuery', 'Symfony 2', 'php', 'Gulp', 'scss']
     },
     {
-        id: '6',
+        id: '7',
         img: 'https://static.licdn.com/aero-v1/sc/h/aajlclc14rr2scznz5qm2rj9u',
         title: 'Intégratrice web',
         company: 'Europharma',
