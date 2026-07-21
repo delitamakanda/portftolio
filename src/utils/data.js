@@ -15,10 +15,10 @@ const EXPERIENCES = [
     {
         id: '1',
         img: 'https://media.licdn.com/dms/image/v2/C4E0BAQFdSPFzWWPyEA/company-logo_200_200/company-logo_200_200/0/1630594613647/davidson_consulting_logo?e=2147483647&v=beta&t=7P3STQtrOplrT5iNw-Qxh7cuy0k4I1YmC7kjukBDms0',
-        title: 'Consultante Développeur Angular .NET',
+        title: 'Consultante Développeur Angular .NET Python',
         company: 'Davidson Consulting',
-        location: 'Guyancourt / Boulogne - Billancourt',
-        dates: 'depuis juil. 2017',
+        location: 'La Garenne Colombes / Boulogne - Billancourt',
+        dates: 'depuis juil. 2026',
         workLength: `${calculateWorkLength(new Date(2026, 7, 15), new Date())} mois`,
         tasks: []
     },
