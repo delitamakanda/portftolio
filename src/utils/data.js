@@ -19,7 +19,7 @@ const EXPERIENCES = [
         company: 'Davidson Consulting',
         location: 'La Garenne Colombes / Boulogne - Billancourt',
         dates: 'depuis juil. 2026',
-        workLength: `${calculateWorkLength(new Date(2026, 7, 15), new Date())} mois`,
+        workLength: `${calculateWorkLength(new Date(2026, 6, 15), new Date())} mois`,
         tasks: []
     },
     {
@@ -52,7 +52,7 @@ const EXPERIENCES = [
         title: 'Développeuse front-end',
         company: 'AXIV IT GROUP',
         location: 'Guyancourt / Boulogne - Billancourt',
-        dates: `${calculateWorkLength(new Date(2016, 10, 1), new Date())} mois`,
+        dates: `${calculateWorkLength(new Date(2016, 10, 2), new Date(2026, 6, 10))} mois`,
         workLength: '',
         tasks: [
             'Intégration de maquettes en HTML/CSS',
