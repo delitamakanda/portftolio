@@ -8,7 +8,7 @@ const calculateWorkLength = (startMonth, endMonth) => {
         const remainingMonths = months % 12;
         return `${years} an${years > 1 ? 's' : ''} et ${remainingMonths}`;
     }
-    return months <= 0? 0 : months;
+    return months <= 0? 1 : months;
 };
 
 const EXPERIENCES = [
