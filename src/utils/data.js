@@ -23,7 +23,7 @@ const calculateWorkLength = (startMonth, endMonth = new Date()) => {
 const EXPERIENCES = [
     {
         id: '1',
-        img: 'https://media.licdn.com/dms/image/v2/C4E0BAQFdSPFzWWPyEA/company-logo_200_200/company-logo_200_200/0/1630594613647/davidson_consulting_logo?e=2147483647&v=beta&t=7P3STQtrOplrT5iNw-Qxh7cu[...]',
+        img: 'https://media.licdn.com/dms/image/v2/C4E0BAQFdSPFzWWPyEA/company-logo_200_200/company-logo_200_200/0/1630594613647/davidson_consulting_logo?e=2147483647&v=beta&t=7P3STQtrOplrT5iNw-Qxh7cuy0k4I1YmC7kjukBDms0',
         title: 'Consultante Développeur Angular .NET Python',
         company: 'Davidson Consulting',
         location: 'La Garenne Colombes / Boulogne - Billancourt',
@@ -33,7 +33,7 @@ const EXPERIENCES = [
     },
     {
         id: '2',
-        img: 'https://media.licdn.com/dms/image/v2/C4E0BAQGUhUhx65EoAw/company-logo_200_200/company-logo_200_200/0/1630621054198/axiv_it_group_logo?e=2147483647&v=beta&t=QA8-zF4fJ1EGRa0Yv7tz30_22jbM48[...]',
+        img: 'https://media.licdn.com/dms/image/v2/C4E0BAQGUhUhx65EoAw/company-logo_200_200/company-logo_200_200/0/1630621054198/axiv_it_group_logo?e=2147483647&v=beta&t=QA8-zF4fJ1EGRa0Yv7tz30_22jbM48CSHBRuQ8QtZe8',
         title: 'Développeuse front-end',
         company: 'AXIV IT GROUP',
         location: 'Guyancourt / Boulogne - Billancourt',
@@ -57,7 +57,7 @@ const EXPERIENCES = [
     },
     {
         id: '3',
-        img: 'https://media.licdn.com/dms/image/v2/C4E0BAQGUhUhx65EoAw/company-logo_200_200/company-logo_200_200/0/1630621054198/axiv_it_group_logo?e=2147483647&v=beta&t=QA8-zF4fJ1EGRa0Yv7tz30_22jbM48[...]',
+        img: 'https://media.licdn.com/dms/image/v2/C4E0BAQGUhUhx65EoAw/company-logo_200_200/company-logo_200_200/0/1630621054198/axiv_it_group_logo?e=2147483647&v=beta&t=QA8-zF4fJ1EGRa0Yv7tz30_22jbM48CSHBRuQ8QtZe8',
         title: 'Développeuse front-end',
         company: 'AXIV IT GROUP',
         location: 'Guyancourt / Boulogne - Billancourt',
@@ -90,7 +90,7 @@ const EXPERIENCES = [
     },
     {
         id: '5',
-        img: 'https://media.licdn.com/dms/image/v2/D4D0BAQGhrWV7ygFFcg/company-logo_200_200/B4DZecbP2NH4AI-/0/1750676078500/emagine_logo?e=2147483647&v=beta&t=V3Bw3T2LonRqcACRfvf-J3zqVcII4iNhqMkHab5qX[...]',
+        img: 'https://media.licdn.com/dms/image/v2/D4D0BAQGhrWV7ygFFcg/company-logo_200_200/B4DZecbP2NH4AI-/0/1750676078500/emagine_logo?e=2147483647&v=beta&t=V3Bw3T2LonRqcACRfvf-J3zqVcII4iNhqMkHab5qX0U',
         title: 'Développeuse front-end',
         company: 'emagine Consulting France',
         location: 'Nanterre',
