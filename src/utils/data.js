@@ -19,7 +19,7 @@ const EXPERIENCES = [
         company: 'Davidson Consulting',
         location: 'La Garenne Colombes / Boulogne - Billancourt',
         dates: 'depuis juil. 2026',
-        workLength: `${calculateWorkLength(new Date(2026, 6, 15), new Date())} mois`,
+        workLength: `${calculateWorkLength(new Date(2026, 7, 15), new Date())} mois`,
         tasks: []
     },
     {
