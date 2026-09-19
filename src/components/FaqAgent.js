@@ -4,7 +4,7 @@ import { TextField, Button, Box } from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
 import { useColorMode } from '@docusaurus/theme-common';
 
-const API_URL = 'https://dlitamakand-faq-worker-18.deno.dev/';
+const API_URL = 'https://faq-worker.delitamakanda.deno.net/';
 
 export default function FaqAgent() {
     const [question, setQuestion] = useState('');
