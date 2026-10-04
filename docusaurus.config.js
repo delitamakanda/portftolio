@@ -10,7 +10,7 @@ require('dotenv').config({ path: '.env' });
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Délita MAKANDA',
-  tagline: 'Développeuse front-end passionnée. J\'aime apprendre de nouvelles choses. Je m\'intéresse également au cloud, au code, au gaming et aux romans noirs.',
+  tagline: 'Développeuse front-end passionnée et curieuse, j’aime explorer de nouvelles technologies, notamment le cloud.\nEn dehors du code, je partage mon temps entre gaming et romans noirs.',
   favicon: 'img/favicon.ico',
   customFields: {
     ACCESS_TOKEN: process.env.ACCESS_TOKEN,
